@@ -1,4 +1,4 @@
-baseURL = 'http://dogukanteber.github.io/'
+baseURL = 'https://dogukanteber.github.io/'
 languageCode = 'en-us'
 title = 'Doğukan Teber Personal Blog'
 theme = "hugo-ink"
