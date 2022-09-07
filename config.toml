@@ -15,7 +15,7 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "ink-demo"
 
 [params]
-	subtitle = "Something, something and something"
+	subtitle = "Some stuff about programming, computing and math"
 
 	# Optional 64x64 avatar image.
 	avatar = "https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg"
