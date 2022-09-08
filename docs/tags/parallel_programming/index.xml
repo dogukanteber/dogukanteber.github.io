@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Doğukan Teber</title>
-    <link>https://dogukanteber.github.io/</link>
-    <description>Recent content on Doğukan Teber</description>
+    <title>parallel_programming on Doğukan Teber</title>
+    <link>https://dogukanteber.github.io/tags/parallel_programming/</link>
+    <description>Recent content in parallel_programming on Doğukan Teber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/parallel_programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Can You Briefly Explain The Domain Decomposition Method?</title>
       <link>https://dogukanteber.github.io/posts/domain-decomposition/</link>
@@ -15,24 +15,6 @@
       
       <guid>https://dogukanteber.github.io/posts/domain-decomposition/</guid>
       <description>The 3D domain decomposition of original computation domain Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
-    </item>
-    
-    <item>
-      <title>Hello_world</title>
-      <link>https://dogukanteber.github.io/posts/hello_world/</link>
-      <pubDate>Wed, 07 Sep 2022 23:15:18 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/posts/hello_world/</guid>
-      <description>TO-DO</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://dogukanteber.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dogukanteber.github.io/about/</guid>
-      <description>TO-DO</description>
     </item>
     
   </channel>

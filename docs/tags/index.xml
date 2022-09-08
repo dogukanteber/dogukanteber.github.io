@@ -6,6 +6,43 @@
     <description>Recent content in Tags on Doğukan Teber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright notice</copyright><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>domain_decomposition</title>
+      <link>https://dogukanteber.github.io/tags/domain_decomposition/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/domain_decomposition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parallel_programming</title>
+      <link>https://dogukanteber.github.io/tags/parallel_programming/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/parallel_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PRACE</title>
+      <link>https://dogukanteber.github.io/tags/prace/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/prace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SoHPC</title>
+      <link>https://dogukanteber.github.io/tags/sohpc/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/sohpc/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
