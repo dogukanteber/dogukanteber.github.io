@@ -53,6 +53,11 @@ url = "/tags"
 weight = 4
 
 [[params.social]]
+icon = "linkedin"
+icon_pack = "fa"
+url = "https://linkedin.com/in/dogukanteber"
+
+[[params.social]]
 name = "Github"
 icon = "github"
 url = "https://github.com/dogukanteber"
