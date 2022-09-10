@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dogukanteber.github.io/posts/domain-decomposition/</loc>
-    <lastmod>2022-09-08T14:04:52+03:00</lastmod>
-  </url><url>
     <loc>https://dogukanteber.github.io/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/tags/mpi/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/tags/openfoam/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/posts/parallel-openfoam/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/tags/parallel_programming/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/posts/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/tags/sohpc/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/tags/</loc>
+    <lastmod>2022-09-09T16:46:13+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/posts/domain-decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
     <loc>https://dogukanteber.github.io/tags/domain_decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>https://dogukanteber.github.io/tags/parallel_programming/</loc>
-    <lastmod>2022-09-08T14:04:52+03:00</lastmod>
-  </url><url>
-    <loc>https://dogukanteber.github.io/posts/</loc>
-    <lastmod>2022-09-08T14:04:52+03:00</lastmod>
-  </url><url>
     <loc>https://dogukanteber.github.io/tags/prace/</loc>
-    <lastmod>2022-09-08T14:04:52+03:00</lastmod>
-  </url><url>
-    <loc>https://dogukanteber.github.io/tags/sohpc/</loc>
-    <lastmod>2022-09-08T14:04:52+03:00</lastmod>
-  </url><url>
-    <loc>https://dogukanteber.github.io/tags/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
     <loc>https://dogukanteber.github.io/about/</loc>
