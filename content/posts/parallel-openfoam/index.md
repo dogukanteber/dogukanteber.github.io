@@ -1,6 +1,6 @@
 ---
 title: "Parallel Programming in OpenFOAM"
-date: 2022-09-09T16:46:13+03:00
+date: 2022-09-19T16:46:13+03:00
 draft: false
 comments: true
 tags: [MPI, OpenFOAM, SoHPC, parallel_programming]
