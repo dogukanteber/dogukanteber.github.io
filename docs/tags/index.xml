@@ -7,43 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 19 Sep 2022 16:46:13 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MPI</title>
-      <link>https://dogukanteber.github.io/tags/mpi/</link>
-      <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/tags/mpi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenFOAM</title>
-      <link>https://dogukanteber.github.io/tags/openfoam/</link>
-      <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/tags/openfoam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>parallel_programming</title>
-      <link>https://dogukanteber.github.io/tags/parallel_programming/</link>
-      <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/tags/parallel_programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SoHPC</title>
-      <link>https://dogukanteber.github.io/tags/sohpc/</link>
-      <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/tags/sohpc/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>domain_decomposition</title>
       <link>https://dogukanteber.github.io/tags/domain_decomposition/</link>
@@ -54,11 +18,29 @@
     </item>
     
     <item>
+      <title>parallel_programming</title>
+      <link>https://dogukanteber.github.io/tags/parallel_programming/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/parallel_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PRACE</title>
       <link>https://dogukanteber.github.io/tags/prace/</link>
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
       
       <guid>https://dogukanteber.github.io/tags/prace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SoHPC</title>
+      <link>https://dogukanteber.github.io/tags/sohpc/</link>
+      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/sohpc/</guid>
       <description></description>
     </item>
     
