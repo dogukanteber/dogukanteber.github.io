@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/sohpc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Sep 2022 16:46:13 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/sohpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parallel Programming in OpenFOAM</title>
+      <link>https://dogukanteber.github.io/posts/parallel-openfoam/</link>
+      <pubDate>Fri, 09 Sep 2022 16:46:13 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/posts/parallel-openfoam/</guid>
+      <description>OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.</description>
+    </item>
+    
     <item>
       <title>Can You Briefly Explain The Domain Decomposition Method?</title>
       <link>https://dogukanteber.github.io/posts/domain-decomposition/</link>
