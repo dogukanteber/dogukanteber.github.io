@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm - Doğukan Teber</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Univariate Linear Regression Implementation Using Gradient Descent Algorithm">
+<meta itemprop="description" content="Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
+Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features."><meta itemprop="datePublished" content="2022-10-09T20:24:50+03:00" />
+<meta itemprop="dateModified" content="2022-10-09T20:24:50+03:00" />
+<meta itemprop="wordCount" content="832">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Univariate Linear Regression Implementation Using Gradient Descent Algorithm" />
+<meta property="og:description" content="Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
+Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dogukanteber.github.io/posts/univariate_linear_regression/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-09T20:24:50+03:00" />
+<meta property="article:modified_time" content="2022-10-09T20:24:50+03:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Univariate Linear Regression Implementation Using Gradient Descent Algorithm"/>
+<meta name="twitter:description" content="Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
+Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://dogukanteber.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://dogukanteber.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+<div class="header">
+	
+		<div class="avatar">
+			<a href="https://dogukanteber.github.io/">
+				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan Teber" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan Teber</a></h1>
+	<div class="site-description"><p>Some stuff about programming, computing and math</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">09</span>
+							<span class="rest">Oct 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Univariate Linear Regression Implementation Using Gradient Descent Algorithm</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.</p>
+<p>Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features. However, for now, we will only focus on one variable. Hence, the name univariate linear regression.
+In the end, we want a linear function that fits optimally for the given data set. We can represent this function as:</p>
+<p>$$h_\theta(x) = \theta_0 + \theta_1x$$</p>
+<p>where $\theta_0$ and $\theta_1$ are the parameters. We will use the gradient descent algorithm to optimize parameters $\theta_0$ and $\theta_1$ but before that, we need to find a way to know how good our current guess is. This is where the cost function comes into play.</p>
+<h3 id="cost-function">Cost Function</h3>
+<p>The cost function, also known as the lost function, determines how well a machine learning model performs for a given dataset. It calculates the difference between the actual value and the predicted value and represents it as a single real number. To get this information, we basically calculate the distance between the training data and the linear function line.</p>
+<p><img src="images/cost_function_example_graph.png" alt="Cost Function"></p>
+<p>Many cost functions are depending on the problem. The one we will be using is mean square error (MSE). It is one of the most commonly used cost function methods. We can calculate the loss by using this formula:</p>
+<p>$$
+J(\theta_0, \theta_1) = \frac{1}{m}\sum_{i=1}^{m} (h_\theta(x^{(i)})- y^{(i)})^2
+$$</p>
+<p>What we are doing here is getting the difference between the actual and the predicted value, taking the power of the result, and performing a summation for all the samples. Then we divide the summation result by the number of samples.</p>
+<h3 id="gradient-descent-algorithm">Gradient Descent Algorithm</h3>
+<p>A cost function on its own is not very useful since we do not change the predicted value. At each step, we want to get better parameters and calculate the cost for these parameters. The optimal parameters should give us the minimum cost. To find the optimal parameters, we use the gradient descent algorithm.</p>
+<div>
+    <img src="images/gradient_descent_illustration.png" width="50%" height="50%">
+</div>
+<p>In the above graph, the y-axis represents costs and the x-axis represents a parameter&rsquo;s value. Since we will run the gradient descent algorithm for each parameter, the x-axis will change for each parameter. This is how the algorithm works:</p>
+<ul>
+<li>Start from an arbitrary position</li>
+<li>Take the derivative of the cost function for the parameter</li>
+<li>Multiply the learning rate with the derivation result</li>
+<li>Update the parameter by subtracting the above multiplication result from the parameter&rsquo;s previous value</li>
+</ul>
+<p>For this problem, we only have two parameters which are $\theta_0$ and $\theta_1$. So, here are the derivation results for both parameters:</p>
+<p>$$
+\frac{dJ}{d\theta_0} = \frac{-2}{m}\sum_{i=1}^m(h_\theta(x^{(i)}) - y^{(i)})
+$$</p>
+<p>$$
+\frac{dJ}{d\theta_1} = \frac{-2}{m}\sum_{i=1}^m(h_\theta(x^{(i)}) - y^{(i)}) \cdot x^{(i)}
+$$</p>
+<p>As the image illustrates, our goal is to minimize the cost. We can do that by taking the derivate of each point and calculating the cost again and again until we reach an optimal point. There are three ways that we can understand we reach a local minimum when:</p>
+<ul>
+<li>the cost is 0 (which is not realistic in the real world)</li>
+<li>we come to the end of total epochs or iterations</li>
+<li>there is not much difference between the previous cost and the current cost</li>
+</ul>
+<p>Enough theory, let&rsquo;s implement our very first linear regression algorithm. You can download the dataset for this post from <a href="static/data.csv">here</a>.</p>
+<p>To start, import the following libraries:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">import</span> numpy <span style="color:#00f">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> pandas <span style="color:#00f">as</span> pd
+</span></span><span style="display:flex;"><span>%matplotlib inline
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> matplotlib.pyplot <span style="color:#00f">as</span> plt
+</span></span></code></pre></div><p>Let&rsquo;s read the data and see how it looks like.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data = pd.read_csv(<span style="color:#a31515">&#34;data.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>X = data.iloc[:, 0]
+</span></span><span style="display:flex;"><span>Y = data.iloc[:, 1]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt.scatter(X, Y)
+</span></span><span style="display:flex;"><span>plt.show()
+</span></span></code></pre></div><p><img src="images/univariate_linear_regression_8_0.png" alt="png"></p>
+<p>Let&rsquo;s implement the gradient descent algorithm.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> cost_function(y_actual, y_prediction):
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> np.sum( (y_actual - y_prediction) ** 2) / len(y_actual)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> gradient_descent_threshold(X, Y, epochs=500, learning_rate=0.0001, stopping_threshold=1e-4):
+</span></span><span style="display:flex;"><span>    m = float(len(X))
+</span></span><span style="display:flex;"><span>    theta_0, theta_1 = 0.01, 0.1
+</span></span><span style="display:flex;"><span>    cost_history = list()
+</span></span><span style="display:flex;"><span>    theta_0_history = list()
+</span></span><span style="display:flex;"><span>    theta_1_history = list()
+</span></span><span style="display:flex;"><span>    prev_cost = <span style="color:#00f">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(epochs):
+</span></span><span style="display:flex;"><span>        y_pred = theta_0 + theta_1 * X
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        curr_cost = cost_function(Y, y_pred)
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> prev_cost <span style="color:#00f">and</span> abs(prev_cost - curr_cost) &lt;= stopping_threshold:
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        prev_cost = curr_cost
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        cost_history.append(curr_cost)
+</span></span><span style="display:flex;"><span>        theta_0_history.append(theta_0)
+</span></span><span style="display:flex;"><span>        theta_1_history.append(theta_1)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        derivative_theta_0 = (-2/m) * np.sum(Y - y_pred)
+</span></span><span style="display:flex;"><span>        derivative_theta_1 = (-2/m) * np.sum(X * (Y - y_pred))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        theta_0 = theta_0 - (learning_rate * derivative_theta_0)
+</span></span><span style="display:flex;"><span>        theta_1 = theta_1 - (learning_rate * derivative_theta_1)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> theta_0, theta_1, cost_history, theta_0_history, theta_1_history
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>theta_0, theta_1, costs, theta_0_hist, theta_1_hist = gradient_descent_threshold(X, Y)
+</span></span><span style="display:flex;"><span>y_pred = theta_0 + theta_1 * X
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt.scatter(X, Y)
+</span></span><span style="display:flex;"><span>plt.plot([min(X), max(X)], [min(y_pred), max(y_pred)], color=<span style="color:#a31515">&#39;red&#39;</span>)
+</span></span><span style="display:flex;"><span>plt.show()
+</span></span></code></pre></div><p><img src="images/univariate_linear_regression_10_0.png" alt="png"></p>
+<p>And, voila. We have fit our linear regression model. Let&rsquo;s the how costs changed overtime for each variable.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f, (ax1, ax2) = plt.subplots(1, 2, sharey=<span style="color:#00f">True</span>, figsize=(18, 5))
+</span></span><span style="display:flex;"><span>ax1.plot(theta_0_hist, costs)
+</span></span><span style="display:flex;"><span>ax1.set_xlabel(<span style="color:#a31515">&#39;theta_0&#39;</span>)
+</span></span><span style="display:flex;"><span>ax1.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ax2.set_xlabel(<span style="color:#a31515">&#39;theta_1&#39;</span>)
+</span></span><span style="display:flex;"><span>ax2.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
+</span></span><span style="display:flex;"><span>ax2.plot(theta_1_hist, costs)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt.show()
+</span></span></code></pre></div><p><img src="images/univariate_linear_regression_12_0.png" alt="png"></p>
+<p>This is it. I hope you get something out of this blog post. In the next post, we will implement this algorithm with multiple variables.</p>
+<p>Thank you for reading.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'ink-demo';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the </a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2022  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

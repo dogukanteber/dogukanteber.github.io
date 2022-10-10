@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 19 Sep 2022 16:46:13 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 20:24:50 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm</title>
+      <link>https://dogukanteber.github.io/posts/univariate_linear_regression/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/posts/univariate_linear_regression/</guid>
+      <description>Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
+Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features.</description>
+    </item>
+    
     <item>
       <title>Parallel Programming in OpenFOAM</title>
       <link>https://dogukanteber.github.io/posts/parallel-openfoam/</link>
