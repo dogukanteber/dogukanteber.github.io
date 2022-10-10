@@ -4,6 +4,7 @@ date: 2022-10-09T20:24:50+03:00
 draft: false
 comments: true
 math: true
+tags: ["machine_learning", "linear_regression", "gradient_descent", "numpy", "pandas"]
 images:
 ---
 

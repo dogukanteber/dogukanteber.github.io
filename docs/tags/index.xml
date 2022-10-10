@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 19 Sep 2022 16:46:13 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 20:24:50 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gradient_descent</title>
+      <link>https://dogukanteber.github.io/tags/gradient_descent/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/gradient_descent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linear_regression</title>
+      <link>https://dogukanteber.github.io/tags/linear_regression/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/linear_regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine_learning</title>
+      <link>https://dogukanteber.github.io/tags/machine_learning/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/machine_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numpy</title>
+      <link>https://dogukanteber.github.io/tags/numpy/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandas</title>
+      <link>https://dogukanteber.github.io/tags/pandas/</link>
+      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>MPI</title>
       <link>https://dogukanteber.github.io/tags/mpi/</link>
