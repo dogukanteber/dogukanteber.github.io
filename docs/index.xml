@@ -46,5 +46,22 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
       <description>I am a fourth-year software engineering student at Yasar University. I have experience in different fields of software engineering such as game programming, back-end development, security, and so on. I am proficient in C, Python, and Bash programming languages. Other languages that I am familiar with are C++, Java, and Javascript. I am now learning Go and CUDA and am exploring artificial intelligence and supercomputing.</description>
     </item>
     
+    <item>
+      <title>Open-Source Contributions</title>
+      <link>https://dogukanteber.github.io/open_source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dogukanteber.github.io/open_source/</guid>
+      <description>In Progress ✓ jubalh/nudoku: Adding support to allow pausing
+Completed ✓ hydrology: Rewrote the serial utility decomposePar in parallel, parallelDecompose. Full source-code
+✓ conda/conda: Fixed empty environment.yml
+✓ redis/redis-py: Added support for PEXPIREAT&amp;rsquo;s options
+✓ redis/redis-py: Added support for PEXPIRE command&amp;rsquo;s options
+✓ redis/redis-py: Added support for EXPIREAT command&amp;rsquo;s options
+✓ redis/redis-py: Added support for EXPIRE command&amp;rsquo;s options
+✓ redis/redis-py: Added support for ACL DRYRUN
+✓ redis/redis-py: Added support for AUTH</description>
+    </item>
+    
   </channel>
 </rss>
