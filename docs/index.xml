@@ -38,6 +38,18 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
     </item>
     
     <item>
+      <title></title>
+      <link>https://dogukanteber.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dogukanteber.github.io/projects/</guid>
+      <description>kanlib kanlib is a library to provide basic data structures and string handling functions. It is written in C and currently supports only Linux OS
+ash ash is an implementation of a Unix shell in C
+tree-gen tree-gen is a clone of original tree command that is a recursive directory listing command or program that produces a depth-indented listing of files, implemented in Python
+dino-t-rex dino-t-rex is a clone of Google Chrome&amp;rsquo;s Dino Runner, implemented using Java and Swing library</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://dogukanteber.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
