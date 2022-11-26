@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Genetic Algorithm - Doğukan Teber</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Genetic Algorithm">
+<meta itemprop="description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation."><meta itemprop="datePublished" content="2022-11-24T16:31:08+03:00" />
+<meta itemprop="dateModified" content="2022-11-24T16:31:08+03:00" />
+<meta itemprop="wordCount" content="1450">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Genetic Algorithm" />
+<meta property="og:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dogukanteber.github.io/posts/genetic-algorithm/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-24T16:31:08+03:00" />
+<meta property="article:modified_time" content="2022-11-24T16:31:08+03:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Genetic Algorithm"/>
+<meta name="twitter:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://dogukanteber.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://dogukanteber.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+<div class="header">
+	
+		<div class="avatar">
+			<a href="https://dogukanteber.github.io/">
+				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan Teber" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan Teber</a></h1>
+	<div class="site-description"><p>Some stuff about programming, computing and math</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/open_source">Open Source Contributions</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">24</span>
+							<span class="rest">Nov 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Genetic Algorithm</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h1 id="what-is-the-genetic-algorithm">What is the Genetic Algorithm?</h1>
+<p>The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.</p>
+<figure>
+  <img src="images/ga_first.png" alt="The 3D domain decomposition of original computation domain"/>
+  <figcaption><a href="https://www.toptal.com/algorithms/genetic-algorithms">Image source</a></figcaption>
+</figure>
+<h1 id="how-does-the-genetic-algorithm-work">How does the Genetic Algorithm work?</h1>
+<p>The algorithm starts with a population of potential solutions (called chromosomes). Each solution has a fitness value that represents how well that solution solves the problem. The algorithm then selects the best solutions (called parents) and produces new solutions (called offspring) by combining the parents&rsquo; chromosomes. This is often done by randomly selecting a point in each parent&rsquo;s chromosome and combining the parts before that point with the parts after that point to form the offspring. If a new offspring&rsquo;s fitness is better than its parents&rsquo;, the offspring replaces its parents. Over time, the population should consist mostly of good solutions and the average fitness of the population should increase.</p>
+<h1 id="what-is-a-chromosome">What is a chromosome?</h1>
+<p>A chromosome is a set of values that represents a potential solution. The representation can be different depending on the problem. There are a few ways to represent a chromosome in the genetic algorithm. A representation can be one of these forms, but not limited to these:</p>
+<ul>
+<li>binary where each bit represents a gene</li>
+<li>array of integers where each integer represents a gene</li>
+<li>string where each character represents a gene</li>
+</ul>
+<p>One can design many other ways to represent a solution using various data structures and data types. However, one might be careful not to choose a representation that is computationally expensive. The reason to that is mutation and crossover operations are done on these chromosomes many times. So, one should avoid using complex representations if there is already a simple way to represent a solution. Doing so will also make the implementation of crossover and mutation operators easy.</p>
+<h1 id="operators-of-the-genetic-algorithm">Operators of the Genetic Algorithm</h1>
+<p>Above we mentioned the operators of the genetic algorithm. Let&rsquo;s talk about each one of them individually. As it is mentioned, the genetic algorithm has several operators that are used to manipulate the population of chromosomes. These operators include selection, crossover, and mutation.</p>
+<h2 id="selection">Selection</h2>
+<p>Selection is used to choose which chromosomes will be used to create the next generation. Selection is usually done using a <strong>fitness function</strong> that evaluates the fitness of each chromosome. The fitness function is used to determine how well a chromosome performs a given task. The higher the fitness, the more likely the chromosome is to be selected. There are three main types of selection processes in the genetic algorithm: selection by fitness, selection by tournament and selection by roulette wheel.</p>
+<p><strong>Selection by fitness:</strong> This is the most common type of selection process, in which individuals are selected for reproduction based on their fitness levels. The more fit an individual is, the higher their chances of being selected.</p>
+<p><strong>Selection by tournament:</strong> In this type of selection process, a number of individuals are selected at random and then compete against each other in a tournament. The winner of the tournament is then selected for reproduction.</p>
+<p><strong>Selection by roulette wheel:</strong> Individuals are selected for reproduction based on their fitness levels, but the selection process is probabilistic in nature. The more fit an individual is, the higher their chances of being selected.</p>
+<h2 id="crossover">Crossover</h2>
+<p>Crossover is used to create new chromosomes from existing chromosomes. Crossover operator takes two parent chromosomes and creates a new chromosome by combining parts of each parent. Crossover typically occurs at random points in the chromosome. There are two types of crossovers in the genetic algorithm: single-point crossover and multi-point crossover.</p>
+<p><strong>Single-point crossover:</strong> A single point is chosen in the genome of each parent, and the alleles to the left and right of that point are swapped between the two parents to create two new offspring. For example, if parent A has the genome &ldquo;10010&rdquo; and parent B has the genome &ldquo;01001&rdquo;, and the crossover point is chosen as the third position from the left, then the two offspring will have the genomes &ldquo;01010&rdquo; and &ldquo;10001&rdquo;.</p>
+<p><img src="images/one_point_crossover.png" alt="single-point cross-over"></p>
+<p><strong>Multi-point crossover:</strong> Multiple points are chosen in the genome of each parent, and the alleles between those points are swapped between the two parents to create two new offspring. For example, if parent A has the genome &ldquo;1001010&rdquo; and parent B has the genome &ldquo;0100111&rdquo;, and the crossover points are chosen as the first and third positions from the left, then the two offspring will have the genomes &ldquo;0101111&rdquo; and &ldquo;1000010&rdquo;.</p>
+<p><img src="images/k_point_crossover.png" alt="k-point cross-over"></p>
+<h2 id="mutation">Mutation</h2>
+<p>Mutation is used to create new, random chromosomes. Mutations can occur at any point in the chromosome and can change any aspect of the chromosome. There are several types of mutation processes that can be used in a genetic algorithm, including:</p>
+<p><strong>Point mutation:</strong> This is the most common type of mutation, and simply involves randomly changing one or more genes in a chromosome.</p>
+<p><img src="images/point_mutation.png" alt="point mutation"></p>
+<p><strong>Swap mutation:</strong> We select two positions on the chromosome at random, and interchange the values. This is common in permutation based encodings.</p>
+<p><img src="images/swap_mutation.png" alt="swap mutation"></p>
+<p><strong>Inversion mutation:</strong> This type of mutation involves reversing the order of genes in a chromosome.</p>
+<p><img src="images/inversion_mutation.png" alt="inversion mutation"></p>
+<p><strong>Scramble mutation:</strong> This type of mutation involves randomly shuffling the order of genes in a chromosome.</p>
+<p><img src="images/scramble_mutation.png" alt="scramble mutation"></p>
+<h1 id="the-algorithm">The Algorithm</h1>
+<p>Here is the pseudo-code for the genetic algoritm:</p>
+<ol>
+<li>Initialize the population</li>
+<li>Evaluate the fitness of each individual in the population</li>
+<li>Select the best individuals from the population for reproduction</li>
+<li>Perform crossover and mutation operations on the selected individuals to generate new offspring</li>
+<li>Evaluate the fitness of the new offspring</li>
+<li>Replace the worst individuals in the population with the new offspring</li>
+<li>Repeat steps 2-6 until a stopping criterion is met</li>
+</ol>
+<p>Note that stopping criterion depends on the problem. One may run the algorithm X times while others can expect to get a solution that reaches to a specific fitness value.</p>
+<h1 id="pros-and-cons-of-the-ga">Pros and Cons of the GA</h1>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>It can be used to solve problems that are difficult or impossible to solve using traditional methods.</td>
+<td>It is a stochastic method and may not find the optimal solution to a problem.</td>
+</tr>
+<tr>
+<td>It is a versatile tool that can be applied to a wide variety of problems.</td>
+<td>It can be slow, especially when searching for the global optimum of a large problem.</td>
+</tr>
+<tr>
+<td>It is capable of finding solutions that are close to the global optimum.</td>
+<td>It requires a good understanding of the problem in order to set up the parameters properly and interpret the results correctly.</td>
+</tr>
+<tr>
+<td>It is relatively easy to implement and does not require sophisticated programming skills.</td>
+<td></td>
+</tr>
+<tr>
+<td>It can be parallelized and run on multiprocessor systems, which can speed up the search process.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="challenges-associated-with-using-the-ga">Challenges associated with using the GA?</h1>
+<p>Some of the challenges associated with using the genetic algorithm are:</p>
+<ul>
+<li>
+<p><strong>The size of the population:</strong> The genetic algorithm works best with a large population size. This can be a challenge when working with real-world data sets, which can be very large.</p>
+</li>
+<li>
+<p><strong>The number of generations:</strong> The genetic algorithm can take a long time to converge on a solution, especially if the number of generations is large.</p>
+</li>
+<li>
+<p><strong>The fitness function:</strong> The fitness function must be carefully designed to ensure that the genetic algorithm is able to find a good solution.</p>
+</li>
+<li>
+<p><strong>The potential for converging on a local optimum:</strong> If the objective function is not convex, then there may be multiple local optima and it can be difficult to identify which one is the global optimum. Even if the objective function is convex, the problem may be non-smooth (e.g., have discontinuities) which can make it difficult for gradient-based optimization methods to converge to the global optimum. Additionally, if the problem is large-scale (e.g., many variables and/or constraints), then it may be computationally infeasible to find the global optimum and one must settle for a good local optimum instead.</p>
+</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation.</p>
+<p>In the next post, we will solve the traveling salesman problem (TSP) using the genetic algorithm in Java programming language.</p>
+<p>Thank you for reading.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'ink-demo';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the </a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2022  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

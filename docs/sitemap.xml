@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dogukanteber.github.io/</loc>
-    <lastmod>2022-10-09T20:24:50+03:00</lastmod>
+    <lastmod>2022-11-24T16:31:08+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/posts/genetic-algorithm/</loc>
+    <lastmod>2022-11-24T16:31:08+03:00</lastmod>
+  </url><url>
+    <loc>https://dogukanteber.github.io/posts/</loc>
+    <lastmod>2022-11-24T16:31:08+03:00</lastmod>
   </url><url>
     <loc>https://dogukanteber.github.io/tags/gradient_descent/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
@@ -18,9 +24,6 @@
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
     <loc>https://dogukanteber.github.io/tags/pandas/</loc>
-    <lastmod>2022-10-09T20:24:50+03:00</lastmod>
-  </url><url>
-    <loc>https://dogukanteber.github.io/posts/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
     <loc>https://dogukanteber.github.io/tags/</loc>
