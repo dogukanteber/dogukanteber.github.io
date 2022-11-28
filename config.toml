@@ -1,6 +1,6 @@
 baseURL = 'https://dogukanteber.github.io/'
 languageCode = 'en-us'
-title = 'Doğukan Teber'
+title = "Doğukan's Blog"
 theme = "hugo-ink"
 paginate = 10
 publishDir = "docs"
@@ -15,14 +15,14 @@ googleAnalytics = "G-PKHMQYVY49"
 disqusShortname = "ink-demo"
 
 [params]
-	subtitle = "Some stuff about programming, computing and math"
+	subtitle = "About programming, computing and math"
 
 	# Optional 64x64 avatar image.
 	avatar = "https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg"
 	# avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
 
 	# Content types to disable Disqus on.
-	disableDisqusTypes = ["page"]
+	disableDisqusTypes = []
 	
 	featherIconsCDN = true
 
