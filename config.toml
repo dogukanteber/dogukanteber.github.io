@@ -11,7 +11,7 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = "UA-123-45"
+googleAnalytics = "G-PKHMQYVY49"
 disqusShortname = "ink-demo"
 
 [params]
