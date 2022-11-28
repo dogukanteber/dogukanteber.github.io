@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm - Doğukan Teber</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta itemprop="name" content="Univariate Linear Regression Implementation Using Gradient Descent Algorithm">
 <meta itemprop="description" content="Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
 Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features."><meta itemprop="datePublished" content="2022-10-09T20:24:50+03:00" />
@@ -38,6 +38,19 @@ Before jumping right into the code, let me briefly talk about what linear regres
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-PKHMQYVY49', { 'anonymize_ip': false });
+}
+</script>
+
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -53,12 +66,12 @@ Before jumping right into the code, let me briefly talk about what linear regres
 	
 		<div class="avatar">
 			<a href="https://dogukanteber.github.io/">
-				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan Teber" />
+				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan&#39;s Blog" />
 			</a>
 		</div>
 	
-	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan Teber</a></h1>
-	<div class="site-description"><p>Some stuff about programming, computing and math</p><nav class="nav social">
+	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan&#39;s Blog</a></h1>
+	<div class="site-description"><p>About programming, computing and math</p><nav class="nav social">
 			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
 		</nav>
 	</div>
@@ -151,71 +164,71 @@ $$</p>
 </ul>
 <p>Enough theory, let&rsquo;s implement our very first linear regression algorithm. You can download the dataset for this post from <a href="static/data.csv">here</a>.</p>
 <p>To start, import the following libraries:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">import</span> numpy <span style="color:#00f">as</span> np
-</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> pandas <span style="color:#00f">as</span> pd
-</span></span><span style="display:flex;"><span>%matplotlib inline
-</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> matplotlib.pyplot <span style="color:#00f">as</span> plt
-</span></span></code></pre></div><p>Let&rsquo;s read the data and see how it looks like.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data = pd.read_csv(<span style="color:#a31515">&#34;data.csv&#34;</span>)
-</span></span><span style="display:flex;"><span>X = data.iloc[:, 0]
-</span></span><span style="display:flex;"><span>Y = data.iloc[:, 1]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt.scatter(X, Y)
-</span></span><span style="display:flex;"><span>plt.show()
-</span></span></code></pre></div><p><img src="images/univariate_linear_regression_8_0.png" alt="png"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> numpy <span style="color:#00f">as</span> np
+<span style="color:#00f">import</span> pandas <span style="color:#00f">as</span> pd
+%matplotlib inline
+<span style="color:#00f">import</span> matplotlib.pyplot <span style="color:#00f">as</span> plt
+</code></pre></div><p>Let&rsquo;s read the data and see how it looks like.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data = pd.read_csv(<span style="color:#a31515">&#34;data.csv&#34;</span>)
+X = data.iloc[:, 0]
+Y = data.iloc[:, 1]
+
+plt.scatter(X, Y)
+plt.show()
+</code></pre></div><p><img src="images/univariate_linear_regression_8_0.png" alt="png"></p>
 <p>Let&rsquo;s implement the gradient descent algorithm.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> cost_function(y_actual, y_prediction):
-</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> np.sum( (y_actual - y_prediction) ** 2) / len(y_actual)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> gradient_descent_threshold(X, Y, epochs=500, learning_rate=0.0001, stopping_threshold=1e-4):
-</span></span><span style="display:flex;"><span>    m = float(len(X))
-</span></span><span style="display:flex;"><span>    theta_0, theta_1 = 0.01, 0.1
-</span></span><span style="display:flex;"><span>    cost_history = list()
-</span></span><span style="display:flex;"><span>    theta_0_history = list()
-</span></span><span style="display:flex;"><span>    theta_1_history = list()
-</span></span><span style="display:flex;"><span>    prev_cost = <span style="color:#00f">None</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(epochs):
-</span></span><span style="display:flex;"><span>        y_pred = theta_0 + theta_1 * X
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        curr_cost = cost_function(Y, y_pred)
-</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> prev_cost <span style="color:#00f">and</span> abs(prev_cost - curr_cost) &lt;= stopping_threshold:
-</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        prev_cost = curr_cost
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        cost_history.append(curr_cost)
-</span></span><span style="display:flex;"><span>        theta_0_history.append(theta_0)
-</span></span><span style="display:flex;"><span>        theta_1_history.append(theta_1)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        derivative_theta_0 = (-2/m) * np.sum(Y - y_pred)
-</span></span><span style="display:flex;"><span>        derivative_theta_1 = (-2/m) * np.sum(X * (Y - y_pred))
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        theta_0 = theta_0 - (learning_rate * derivative_theta_0)
-</span></span><span style="display:flex;"><span>        theta_1 = theta_1 - (learning_rate * derivative_theta_1)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> theta_0, theta_1, cost_history, theta_0_history, theta_1_history
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>theta_0, theta_1, costs, theta_0_hist, theta_1_hist = gradient_descent_threshold(X, Y)
-</span></span><span style="display:flex;"><span>y_pred = theta_0 + theta_1 * X
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt.scatter(X, Y)
-</span></span><span style="display:flex;"><span>plt.plot([min(X), max(X)], [min(y_pred), max(y_pred)], color=<span style="color:#a31515">&#39;red&#39;</span>)
-</span></span><span style="display:flex;"><span>plt.show()
-</span></span></code></pre></div><p><img src="images/univariate_linear_regression_10_0.png" alt="png"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> cost_function(y_actual, y_prediction):
+    <span style="color:#00f">return</span> np.sum( (y_actual - y_prediction) ** 2) / len(y_actual)
+
+
+<span style="color:#00f">def</span> gradient_descent_threshold(X, Y, epochs=500, learning_rate=0.0001, stopping_threshold=1e-4):
+    m = float(len(X))
+    theta_0, theta_1 = 0.01, 0.1
+    cost_history = list()
+    theta_0_history = list()
+    theta_1_history = list()
+    prev_cost = <span style="color:#00f">None</span>
+    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(epochs):
+        y_pred = theta_0 + theta_1 * X
+        
+        curr_cost = cost_function(Y, y_pred)
+        <span style="color:#00f">if</span> prev_cost <span style="color:#00f">and</span> abs(prev_cost - curr_cost) &lt;= stopping_threshold:
+            <span style="color:#00f">break</span>
+
+        prev_cost = curr_cost
+        
+        cost_history.append(curr_cost)
+        theta_0_history.append(theta_0)
+        theta_1_history.append(theta_1)
+
+        derivative_theta_0 = (-2/m) * np.sum(Y - y_pred)
+        derivative_theta_1 = (-2/m) * np.sum(X * (Y - y_pred))
+
+        theta_0 = theta_0 - (learning_rate * derivative_theta_0)
+        theta_1 = theta_1 - (learning_rate * derivative_theta_1)
+
+    <span style="color:#00f">return</span> theta_0, theta_1, cost_history, theta_0_history, theta_1_history
+
+
+theta_0, theta_1, costs, theta_0_hist, theta_1_hist = gradient_descent_threshold(X, Y)
+y_pred = theta_0 + theta_1 * X
+
+plt.scatter(X, Y)
+plt.plot([min(X), max(X)], [min(y_pred), max(y_pred)], color=<span style="color:#a31515">&#39;red&#39;</span>)
+plt.show()
+</code></pre></div><p><img src="images/univariate_linear_regression_10_0.png" alt="png"></p>
 <p>And, voila. We have fit our linear regression model. Let&rsquo;s the how costs changed overtime for each variable.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f, (ax1, ax2) = plt.subplots(1, 2, sharey=<span style="color:#00f">True</span>, figsize=(18, 5))
-</span></span><span style="display:flex;"><span>ax1.plot(theta_0_hist, costs)
-</span></span><span style="display:flex;"><span>ax1.set_xlabel(<span style="color:#a31515">&#39;theta_0&#39;</span>)
-</span></span><span style="display:flex;"><span>ax1.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>ax2.set_xlabel(<span style="color:#a31515">&#39;theta_1&#39;</span>)
-</span></span><span style="display:flex;"><span>ax2.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
-</span></span><span style="display:flex;"><span>ax2.plot(theta_1_hist, costs)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>plt.show()
-</span></span></code></pre></div><p><img src="images/univariate_linear_regression_12_0.png" alt="png"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f, (ax1, ax2) = plt.subplots(1, 2, sharey=<span style="color:#00f">True</span>, figsize=(18, 5))
+ax1.plot(theta_0_hist, costs)
+ax1.set_xlabel(<span style="color:#a31515">&#39;theta_0&#39;</span>)
+ax1.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
+
+ax2.set_xlabel(<span style="color:#a31515">&#39;theta_1&#39;</span>)
+ax2.set_ylabel(<span style="color:#a31515">&#39;cost&#39;</span>)
+ax2.plot(theta_1_hist, costs)
+
+plt.show()
+</code></pre></div><p><img src="images/univariate_linear_regression_12_0.png" alt="png"></p>
 <p>This is it. I hope you get something out of this blog post. In the next post, we will implement this algorithm with multiple variables.</p>
 <p>Thank you for reading.</p>
 
@@ -268,7 +281,7 @@ $$</p>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-123-45', 'auto');
+	ga('create', 'G-PKHMQYVY49', 'auto');
 	
 	ga('send', 'pageview');
 }

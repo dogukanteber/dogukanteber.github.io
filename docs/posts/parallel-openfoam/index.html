@@ -2,15 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Parallel Programming in OpenFOAM - Doğukan Teber</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Parallel Programming in OpenFOAM - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta itemprop="name" content="Parallel Programming in OpenFOAM">
 <meta itemprop="description" content="OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
-OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI."><meta itemprop="datePublished" content="2022-09-19T16:46:13+03:00" />
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.
+It was difficult for me to learn parallel programming in OpenFOAM at the beginning of the SoHPC."><meta itemprop="datePublished" content="2022-09-19T16:46:13+03:00" />
 <meta itemprop="dateModified" content="2022-09-19T16:46:13+03:00" />
-<meta itemprop="wordCount" content="1079">
+<meta itemprop="wordCount" content="1078">
 <meta itemprop="keywords" content="MPI,OpenFOAM,SoHPC,parallel_programming," /><meta property="og:title" content="Parallel Programming in OpenFOAM" />
 <meta property="og:description" content="OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
-OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI." />
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.
+It was difficult for me to learn parallel programming in OpenFOAM at the beginning of the SoHPC." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dogukanteber.github.io/posts/parallel-openfoam/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-19T16:46:13+03:00" />
@@ -19,7 +21,8 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Parallel Programming in OpenFOAM"/>
 <meta name="twitter:description" content="OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
-OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI."/>
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.
+It was difficult for me to learn parallel programming in OpenFOAM at the beginning of the SoHPC."/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/main.css" />
@@ -33,6 +36,19 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 <body>
 	<div class="container wrapper">
 		
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-PKHMQYVY49', { 'anonymize_ip': false });
+}
+</script>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -49,12 +65,12 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 	
 		<div class="avatar">
 			<a href="https://dogukanteber.github.io/">
-				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan Teber" />
+				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan&#39;s Blog" />
 			</a>
 		</div>
 	
-	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan Teber</a></h1>
-	<div class="site-description"><p>Some stuff about programming, computing and math</p><nav class="nav social">
+	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan&#39;s Blog</a></h1>
+	<div class="site-description"><p>About programming, computing and math</p><nav class="nav social">
 			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
 		</nav>
 	</div>
@@ -122,45 +138,45 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 <h2 id="a-basic-hello-world">A Basic Hello World</h2>
 <p>Let’s write a basic hello world program and run it in parallel. The details of compiling the program are not given here. You can look at other OpenFOAM programs’ <code>Make</code> directory to have an idea of how to compile your program.</p>
 <p>When we run our program, we have to provide an extra argument to let the compiler know that this run is not a serial run. Therefore, we have to include <code>setRootCase.H</code> file inside the main function to set up the basic command-line arguments to provide the program.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#00f">#include</span> <span style="color:#00f">&#34;setRootCase.H&#34;</span><span style="color:#00f">
-</span></span></span></code></pre></div><p>The reason why we add this line inside the main function is that this header file is constructed from the arguments (<code>int argc, char* argv[]</code>) in the main function.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#00f">#include</span> <span style="color:#00f">&#34;setRootCase.H&#34;</span><span style="color:#00f">
+</span></code></pre></div><p>The reason why we add this line inside the main function is that this header file is constructed from the arguments (<code>int argc, char* argv[]</code>) in the main function.</p>
 <p>By default, our program searches for processor directories and if it does not find any directory like <code>processor2</code>, it throws an error saying that it could not find this directory. If you do not want your program to search existing processor directories, you can disable this behavior by:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>argList::noCheckProcessorDirectories();
-</span></span></code></pre></div><p>If you want to disable this behavior, add this line above the line where you include <code>setRootCase.H</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">argList::noCheckProcessorDirectories();
+</code></pre></div><p>If you want to disable this behavior, add this line above the line where you include <code>setRootCase.H</code> file.</p>
 <p>So far so good. Now, the final step is to print the message to the console:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Pout&lt;&lt; <span style="color:#a31515">&#34;Hello from process &#34;</span> &lt;&lt; Pstream::myProcNo() &lt;&lt; endl;
-</span></span></code></pre></div><p>In serial applications, <code>Info</code> is used for printing messages to the console. For parallel application, <code>Pout</code> is used. However, <code>Info</code> can still be used in parallel applications. Keep in mind that <code>Info</code> only prints the message in the master process.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">Pout&lt;&lt; <span style="color:#a31515">&#34;Hello from process &#34;</span> &lt;&lt; Pstream::myProcNo() &lt;&lt; endl;
+</code></pre></div><p>In serial applications, <code>Info</code> is used for printing messages to the console. For parallel application, <code>Pout</code> is used. However, <code>Info</code> can still be used in parallel applications. Keep in mind that <code>Info</code> only prints the message in the master process.</p>
 <p>This is what the final program looks like:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#00f">#include</span> <span style="color:#00f">&#34;fvCFD.H&#34;</span><span style="color:#00f">
-</span></span></span><span style="display:flex;"><span><span style="color:#00f"></span>
-</span></span><span style="display:flex;"><span><span style="color:#2b91af">int</span> main(<span style="color:#2b91af">int</span> argc, <span style="color:#2b91af">char</span>* argv[]) {
-</span></span><span style="display:flex;"><span>    argList::noCheckProcessorDirectories();
-</span></span><span style="display:flex;"><span>    <span style="color:#00f">#include</span> <span style="color:#00f">&#34;setRootCase.H&#34;</span><span style="color:#00f">
-</span></span></span><span style="display:flex;"><span><span style="color:#00f"></span>    <span style="color:#00f">if</span> (!Pstream::parRun())
-</span></span><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        FatalErrorInFunction
-</span></span><span style="display:flex;"><span>            &lt;&lt; <span style="color:#a31515">&#34;: This utility can only be run parallel&#34;</span>
-</span></span><span style="display:flex;"><span>            &lt;&lt; exit(FatalError);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    Pout&lt;&lt; <span style="color:#a31515">&#34;Hello from process &#34;</span> &lt;&lt; Pstream::myProcNo() &lt;&lt; endl;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>After you compile the code, you can run this program by:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#00f">#include</span> <span style="color:#00f">&#34;fvCFD.H&#34;</span><span style="color:#00f">
+</span><span style="color:#00f"></span>
+<span style="color:#2b91af">int</span> main(<span style="color:#2b91af">int</span> argc, <span style="color:#2b91af">char</span>* argv[]) {
+    argList::noCheckProcessorDirectories();
+    <span style="color:#00f">#include</span> <span style="color:#00f">&#34;setRootCase.H&#34;</span><span style="color:#00f">
+</span><span style="color:#00f"></span>    <span style="color:#00f">if</span> (!Pstream::parRun())
+    {
+        FatalErrorInFunction
+            &lt;&lt; <span style="color:#a31515">&#34;: This utility can only be run parallel&#34;</span>
+            &lt;&lt; exit(FatalError);
+    }
+    Pout&lt;&lt; <span style="color:#a31515">&#34;Hello from process &#34;</span> &lt;&lt; Pstream::myProcNo() &lt;&lt; endl;
+}
+</code></pre></div><p>After you compile the code, you can run this program by:</p>
 <p><code>mpirun -np &lt;number-of-proc&gt; &lt;program-name&gt;</code></p>
 <p>I also added a check to make sure the program is run only in parallel. If someone tries to run it in serial, it will complain and throw an error.</p>
 <h2 id="pstream-class-and-collective-communication">Pstream Class and Collective Communication</h2>
 <p>As you can see from the above example, we did not use MPI routines in our program. OpenFOAM provides a wrapper class called <code>Pstream</code>. We can use this class for the inter-processor communications stream.</p>
 <p>For instance, gathering information from other processes is a common task. For that, we can use <code>Pstream</code> class’ <code>gather</code> method:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>labelList data(10, Pstream::myProcNo() + 1);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Pstream::gather(data, multiplyOp&lt;labelList&gt;());
-</span></span><span style="display:flex;"><span><span style="color:#00f">if</span> (Pstream::master())
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    Pout &lt;&lt; data &lt;&lt; endl;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Pstream::scatter(data);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Pout &lt;&lt; data &lt;&lt; endl;
-</span></span></code></pre></div><p>Above code block gathers <code>labelList</code> data from each process multiplies these lists and scatters the result to all processes.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">labelList data(10, Pstream::myProcNo() + 1);
+
+Pstream::gather(data, multiplyOp&lt;labelList&gt;());
+<span style="color:#00f">if</span> (Pstream::master())
+{
+    Pout &lt;&lt; data &lt;&lt; endl;
+}
+Pstream::scatter(data);
+
+Pout &lt;&lt; data &lt;&lt; endl;
+</code></pre></div><p>Above code block gathers <code>labelList</code> data from each process multiplies these lists and scatters the result to all processes.</p>
 <p>There are many binary operations that can make collective communication effective. Here are some of the available binary operations on <code>labelList</code> data structure:</p>
 <ul>
 <li><code>plusOp&lt;labelList&gt;()</code></li>
@@ -173,45 +189,45 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 <p>There are many other methods that <code>Pstream</code> class provides. You can check out <code>Pstream.H</code> file for the rest.</p>
 <p>One of the problems I faced during this summer was this problem:</p>
 <p>You have 8 cells of a computational domain and split the domain into 4 partitions. The first two numbers of the list are calculated on processor 0, the second two numbers of the list are calculated on processor 1, etc. The data looks like this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>processor 0: 8 (0 0 0 0 0 0 0 0)
-</span></span><span style="display:flex;"><span>processor 1: 8 (0 0 1 1 0 0 0 0)
-</span></span><span style="display:flex;"><span>processor 2: 8 (0 0 0 0 2 2 0 0)
-</span></span><span style="display:flex;"><span>processor 3: 8 (0 0 0 0 0 0 3 3)
-</span></span></code></pre></div><p>How can you gather the list from all processors like <code>8 (0 0 1 1 2 2 3 3)</code>?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">processor 0: 8 (0 0 0 0 0 0 0 0)
+processor 1: 8 (0 0 1 1 0 0 0 0)
+processor 2: 8 (0 0 0 0 2 2 0 0)
+processor 3: 8 (0 0 0 0 0 0 3 3)
+</code></pre></div><p>How can you gather the list from all processors like <code>8 (0 0 1 1 2 2 3 3)</code>?</p>
 <p>The numbers are arbitrary but explain my problem very well. Here is the code snippet that solved my problem:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#00f">#include</span> <span style="color:#00f">&#34;PstreamReduceOps.H&#34;</span><span style="color:#00f">
-</span></span></span><span style="display:flex;"><span><span style="color:#00f"></span>
-</span></span><span style="display:flex;"><span><span style="color:#008000">// for setting up the data
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>labelList data(8, 0);
-</span></span><span style="display:flex;"><span>data[Pstream::myProcNo() * 2] = Pstream::myProcNo();
-</span></span><span style="display:flex;"><span>data[Pstream::myProcNo() * 2 + 1] = Pstream::myProcNo();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>reduce(data, sumOp&lt;labelList&gt;());
-</span></span><span style="display:flex;"><span>Pout &lt;&lt; data &lt;&lt; endl;
-</span></span></code></pre></div><h2 id="point-to-point-communication">Point-to-Point Communication</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#00f">#include</span> <span style="color:#00f">&#34;PstreamReduceOps.H&#34;</span><span style="color:#00f">
+</span><span style="color:#00f"></span>
+<span style="color:#008000">// for setting up the data
+</span><span style="color:#008000"></span>labelList data(8, 0);
+data[Pstream::myProcNo() * 2] = Pstream::myProcNo();
+data[Pstream::myProcNo() * 2 + 1] = Pstream::myProcNo();
+
+reduce(data, sumOp&lt;labelList&gt;());
+Pout &lt;&lt; data &lt;&lt; endl;
+</code></pre></div><h2 id="point-to-point-communication">Point-to-Point Communication</h2>
 <p>Let me illustrate this topic with an example. Below you can see an example of point-to-point communication:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>labelList data(Pstream::nProcs(), Pstream::myProcNo() * 10);
-</span></span><span style="display:flex;"><span><span style="color:#008000">// -1 indicates empty
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>labelList recvData(Pstream::nProcs(), -1);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#008000">// send
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">if</span> (Pstream::myProcNo() &lt; Pstream::nProcs() / 2)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    label destination = Pstream::nProcs() - (Pstream::myProcNo() + 1);
-</span></span><span style="display:flex;"><span>    OPstream send(Pstream::commsTypes::blocking, destination);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    send &lt;&lt; data;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#008000">// receive
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">else</span>
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    label target = Pstream::nProcs() - (Pstream::myProcNo() + 1);
-</span></span><span style="display:flex;"><span>    IPstream recv(Pstream::commsTypes::blocking, target);
-</span></span><span style="display:flex;"><span>    recv &gt;&gt; recvData;
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>Pout &lt;&lt; recvData &lt;&lt; endl;
-</span></span></code></pre></div><p>Assume the number of processes used in this program is 10. In that case, process 0 communicates with process 9, process 1 communicates with process 8, etc. Receiving processes hold their data in another variable called <code>recvData</code>. In the end, each process prints its data to the console. As you can see above, to send or receive data you have to create <code>OPstream</code> or <code>IPstream</code> objects, respectively. You can consider these as <code>MPI_Send</code> and <code>MPI_Recv</code>. In order to avoid deadlocks, make sure that the number of <code>OPstream</code> is equal to the number of <code>IPstream</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">labelList data(Pstream::nProcs(), Pstream::myProcNo() * 10);
+<span style="color:#008000">// -1 indicates empty
+</span><span style="color:#008000"></span>labelList recvData(Pstream::nProcs(), -1);
+
+<span style="color:#008000">// send
+</span><span style="color:#008000"></span><span style="color:#00f">if</span> (Pstream::myProcNo() &lt; Pstream::nProcs() / 2)
+{
+    label destination = Pstream::nProcs() - (Pstream::myProcNo() + 1);
+    OPstream send(Pstream::commsTypes::blocking, destination);
+
+    send &lt;&lt; data;
+}
+<span style="color:#008000">// receive
+</span><span style="color:#008000"></span><span style="color:#00f">else</span>
+{
+    label target = Pstream::nProcs() - (Pstream::myProcNo() + 1);
+    IPstream recv(Pstream::commsTypes::blocking, target);
+    recv &gt;&gt; recvData;
+    
+}
+Pout &lt;&lt; recvData &lt;&lt; endl;
+</code></pre></div><p>Assume the number of processes used in this program is 10. In that case, process 0 communicates with process 9, process 1 communicates with process 8, etc. Receiving processes hold their data in another variable called <code>recvData</code>. In the end, each process prints its data to the console. As you can see above, to send or receive data you have to create <code>OPstream</code> or <code>IPstream</code> objects, respectively. You can consider these as <code>MPI_Send</code> and <code>MPI_Recv</code>. In order to avoid deadlocks, make sure that the number of <code>OPstream</code> is equal to the number of <code>IPstream</code>.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>There are many things that can be done with <code>Pstream</code>. However, it is not possible to fit everything into one post. If you think something is wrong or you want extra examples, please let me know in the comments.</p>
 <p>Thank you for reading.</p>
@@ -263,7 +279,7 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-123-45', 'auto');
+	ga('create', 'G-PKHMQYVY49', 'auto');
 	
 	ga('send', 'pageview');
 }

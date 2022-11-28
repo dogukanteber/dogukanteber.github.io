@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MPI on Doğukan Teber</title>
+    <title>MPI on Doğukan&#39;s Blog</title>
     <link>https://dogukanteber.github.io/tags/mpi/</link>
-    <description>Recent content in MPI on Doğukan Teber</description>
+    <description>Recent content in MPI on Doğukan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
@@ -15,7 +15,8 @@
       
       <guid>https://dogukanteber.github.io/posts/parallel-openfoam/</guid>
       <description>OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
-OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.</description>
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.
+It was difficult for me to learn parallel programming in OpenFOAM at the beginning of the SoHPC.</description>
     </item>
     
   </channel>

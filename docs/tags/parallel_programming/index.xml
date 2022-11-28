@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>parallel_programming on Doğukan Teber</title>
+    <title>parallel_programming on Doğukan&#39;s Blog</title>
     <link>https://dogukanteber.github.io/tags/parallel_programming/</link>
-    <description>Recent content in parallel_programming on Doğukan Teber</description>
+    <description>Recent content in parallel_programming on Doğukan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
@@ -15,7 +15,8 @@
       
       <guid>https://dogukanteber.github.io/posts/parallel-openfoam/</guid>
       <description>OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.
-OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.</description>
+OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.
+It was difficult for me to learn parallel programming in OpenFOAM at the beginning of the SoHPC.</description>
     </item>
     
     <item>
@@ -24,7 +25,7 @@ OpenFOAM has native support for parallel programming with MPI but writing parall
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
       
       <guid>https://dogukanteber.github.io/posts/domain-decomposition/</guid>
-      <description>The 3D domain decomposition of original computation domain Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
+      <description>The 3D domain decomposition of original computation domain  Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
     </item>
     
   </channel>

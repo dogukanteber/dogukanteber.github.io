@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PRACE on Doğukan Teber</title>
+    <title>PRACE on Doğukan&#39;s Blog</title>
     <link>https://dogukanteber.github.io/tags/prace/</link>
-    <description>Recent content in PRACE on Doğukan Teber</description>
+    <description>Recent content in PRACE on Doğukan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
@@ -14,7 +14,7 @@
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
       
       <guid>https://dogukanteber.github.io/posts/domain-decomposition/</guid>
-      <description>The 3D domain decomposition of original computation domain Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
+      <description>The 3D domain decomposition of original computation domain  Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
     </item>
     
   </channel>
