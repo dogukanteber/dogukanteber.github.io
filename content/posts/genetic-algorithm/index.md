@@ -4,6 +4,7 @@ date: 2022-11-24T16:31:08+03:00
 draft: false
 comments: true
 math: true
+tags: [genetic_algorithm]
 images:
 ---
 

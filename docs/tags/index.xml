@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 09 Oct 2022 20:24:50 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 16:31:08 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>genetic_algorithm</title>
+      <link>https://dogukanteber.github.io/tags/genetic_algorithm/</link>
+      <pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/tags/genetic_algorithm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>gradient_descent</title>
       <link>https://dogukanteber.github.io/tags/gradient_descent/</link>

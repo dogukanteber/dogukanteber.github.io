@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genetic_algorithm on Doğukan&#39;s Blog</title>
+    <link>https://dogukanteber.github.io/tags/genetic_algorithm/</link>
+    <description>Recent content in genetic_algorithm on Doğukan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Thu, 24 Nov 2022 16:31:08 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/genetic_algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Genetic Algorithm</title>
+      <link>https://dogukanteber.github.io/posts/genetic-algorithm/</link>
+      <pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate>
+      
+      <guid>https://dogukanteber.github.io/posts/genetic-algorithm/</guid>
+      <description>What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation.</description>
+    </item>
+    
+  </channel>
+</rss>
