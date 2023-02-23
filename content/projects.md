@@ -1,3 +1,8 @@
+### [targus](https://github.com/Yasar-University-Software-Engineering/targus)
+targus is a tool that solves the target coverage problem in Wireless Sensor Networks (WSNs). It provides an easy-to-use interface that lets you create your own problem instance, solve it, and give statistical information.
+
+The aim of the project is to maximize the lifetime to monitor the target points for k-coverage and m-connected node placement in target-based wireless sensor networks. The Genetic Algorithm is used to solve the target coverage problem by applying local search in each iteration.
+
 ### [kanlib](https://github.com/dogukanteber/kanlib)
 
 kanlib is a library to provide basic data structures and string handling functions. It is written in C and currently supports only Linux OS
