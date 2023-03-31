@@ -53,8 +53,9 @@ It was difficult for me to learn parallel programming in OpenFOAM at the beginni
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dogukanteber.github.io/projects/</guid>
-      <description>targus targus is a tool that solves the target coverage problem in Wireless Sensor Networks (WSNs). It provides an easy-to-use interface that lets you create your own problem instance, solve it, and give statistical information.
-The aim of the project is to maximize the lifetime to monitor the target points for k-coverage and m-connected node placement in target-based wireless sensor networks. The Genetic Algorithm is used to solve the target coverage problem by applying local search in each iteration.</description>
+      <description>auth-gateway (In Progress) auth-gateway is an experimental authentication gateway for Cortex. It provides simple configuration to enable users to use multi-tenancy features of Cortex.
+parallelDecompose parallelDecompose is a pre-processing utility for OpenFOAM that decomposes a mesh and fields of a case for parallel execution faster than decomposePar
+targus targus is a tool that solves the target coverage problem in Wireless Sensor Networks (WSNs). It provides an easy-to-use interface that lets you create your own problem instance, solve it, and give statistical information.</description>
     </item>
     
     <item>
@@ -72,15 +73,16 @@ The aim of the project is to maximize the lifetime to monitor the target points 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dogukanteber.github.io/open_source/</guid>
-      <description>In Progress ✓ jubalh/nudoku: Adding support to allow pausing
-Completed ✓ hydrology: Rewrote the serial utility decomposePar in parallel, parallelDecompose. Full source-code
+      <description>In Progress cortexproject/cortex: Adding unit test
+jubalh/nudoku: Adding support to allow pausing
+Completed ✓ vitessio/website: Fixed broken links in the documentation
+✓ hydrology: Rewrote the serial utility decomposePar in parallel, parallelDecompose. Full source-code
 ✓ conda/conda: Fixed empty environment.yml
 ✓ redis/redis-py: Added support for PEXPIREAT&amp;rsquo;s options
 ✓ redis/redis-py: Added support for PEXPIRE command&amp;rsquo;s options
 ✓ redis/redis-py: Added support for EXPIREAT command&amp;rsquo;s options
 ✓ redis/redis-py: Added support for EXPIRE command&amp;rsquo;s options
-✓ redis/redis-py: Added support for ACL DRYRUN
-✓ redis/redis-py: Added support for AUTH</description>
+✓ redis/redis-py: Added support for ACL DRYRUN</description>
     </item>
     
   </channel>

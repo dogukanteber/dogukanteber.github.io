@@ -6,9 +6,13 @@ type: "page"
 
 ## In Progress
 
-&check; [jubalh/nudoku](https://github.com/jubalh/nudoku/pull/48): Adding support to allow pausing
+[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5233): Adding unit test
+
+[jubalh/nudoku](https://github.com/jubalh/nudoku/pull/48): Adding support to allow pausing
 
 ## Completed
+
+&check; [vitessio/website](https://github.com/vitessio/website/pull/1359): Fixed broken links in the documentation
 
 &check; [hydrology](https://github.com/dogukanteber/hydrology/pull/5): Rewrote the serial utility decomposePar in parallel, parallelDecompose. [Full source-code](https://github.com/dogukanteber/hydrology/tree/main/applications/utilities/parallelProcessing)
 

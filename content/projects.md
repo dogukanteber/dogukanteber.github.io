@@ -1,3 +1,9 @@
+### [auth-gateway](https://github.com/cortexproject/auth-gateway) (In Progress)
+auth-gateway is an experimental authentication gateway for [Cortex](https://github.com/cortexproject/cortex). It provides simple configuration to enable users to use multi-tenancy features of Cortex. 
+
+### [parallelDecompose](https://github.com/dogukanteber/hydrology)
+parallelDecompose is a pre-processing utility for [OpenFOAM](https://www.openfoam.com/) that decomposes a mesh and fields of a case for parallel execution faster than [decomposePar](https://www.openfoam.com/documentation/guides/latest/man/decomposePar.html)
+
 ### [targus](https://github.com/Yasar-University-Software-Engineering/targus)
 targus is a tool that solves the target coverage problem in Wireless Sensor Networks (WSNs). It provides an easy-to-use interface that lets you create your own problem instance, solve it, and give statistical information.
 
