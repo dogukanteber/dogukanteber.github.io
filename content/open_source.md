@@ -6,6 +6,8 @@ type: "page"
 
 ## In Progress
 
+[cortexproject/auth-gateway](https://github.com/cortexproject/auth-gateway): Developing an authentication gateway for [Cortex](https://github.com/cortexproject/cortex)
+
 [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5267): Documenting runtime config
 
 [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5250): Fixing a validation error
