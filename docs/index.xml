@@ -73,16 +73,16 @@ targus targus is a tool that solves the target coverage problem in Wireless Sens
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dogukanteber.github.io/open_source/</guid>
-      <description>In Progress cortexproject/cortex: Adding unit test
+      <description>In Progress cortexproject/cortex: Documenting runtime config
+cortexproject/cortex: Fixing a validation error
+cortexproject/cortex: Adding a proposal of auth-gateway to Cortex
 jubalh/nudoku: Adding support to allow pausing
-Completed ✓ vitessio/website: Fixed broken links in the documentation
+Completed ✓ cortexproject/cortex: Added unit test
+✓ vitessio/website: Fixed broken links in the documentation
 ✓ hydrology: Rewrote the serial utility decomposePar in parallel, parallelDecompose. Full source-code
 ✓ conda/conda: Fixed empty environment.yml
 ✓ redis/redis-py: Added support for PEXPIREAT&amp;rsquo;s options
-✓ redis/redis-py: Added support for PEXPIRE command&amp;rsquo;s options
-✓ redis/redis-py: Added support for EXPIREAT command&amp;rsquo;s options
-✓ redis/redis-py: Added support for EXPIRE command&amp;rsquo;s options
-✓ redis/redis-py: Added support for ACL DRYRUN</description>
+✓ redis/redis-py: Added support for PEXPIRE command&amp;rsquo;s options</description>
     </item>
     
   </channel>

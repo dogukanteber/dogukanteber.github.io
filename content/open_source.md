@@ -6,11 +6,17 @@ type: "page"
 
 ## In Progress
 
-[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5233): Adding unit test
+[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5267): Documenting runtime config
+
+[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5250): Fixing a validation error
+
+[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5209): Adding a proposal of auth-gateway to Cortex
 
 [jubalh/nudoku](https://github.com/jubalh/nudoku/pull/48): Adding support to allow pausing
 
 ## Completed
+
+&check; [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5233): Added unit test
 
 &check; [vitessio/website](https://github.com/vitessio/website/pull/1359): Fixed broken links in the documentation
 
