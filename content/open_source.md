@@ -6,6 +6,8 @@ type: "page"
 
 ## In Progress
 
+[cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5380): Unifying README.md and docs/_index.md
+
 [cortexproject/auth-gateway](https://github.com/cortexproject/auth-gateway): Developing an authentication gateway for [Cortex](https://github.com/cortexproject/cortex)
 
 [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5267): Documenting runtime config
@@ -14,9 +16,13 @@ type: "page"
 
 [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5209): Adding a proposal of auth-gateway to Cortex
 
-[jubalh/nudoku](https://github.com/jubalh/nudoku/pull/48): Adding support to allow pausing
-
 ## Completed
+
+&check; [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5242): Fixed typos and a grammar error
+
+&check; [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5367): Fixed a typo
+
+&check; [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5378): Updated "single instance, single process example" in the getting started document
 
 &check; [cortexproject/cortex](https://github.com/cortexproject/cortex/pull/5233): Added unit test
 
