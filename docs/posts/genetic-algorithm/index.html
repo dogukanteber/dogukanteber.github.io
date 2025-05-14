@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Genetic Algorithm - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Genetic Algorithm">
-<meta itemprop="description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation."><meta itemprop="datePublished" content="2022-11-24T16:31:08+03:00" />
-<meta itemprop="dateModified" content="2022-11-24T16:31:08+03:00" />
-<meta itemprop="wordCount" content="1450">
-<meta itemprop="keywords" content="genetic_algorithm," /><meta property="og:title" content="Genetic Algorithm" />
-<meta property="og:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://dogukanteber.github.io/posts/genetic-algorithm/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-11-24T16:31:08+03:00" />
-<meta property="article:modified_time" content="2022-11-24T16:31:08+03:00" />
+	
+  <meta itemprop="name" content="Genetic Algorithm">
+  <meta itemprop="description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.">
+  <meta itemprop="datePublished" content="2022-11-24T16:31:08+03:00">
+  <meta itemprop="dateModified" content="2022-11-24T16:31:08+03:00">
+  <meta itemprop="wordCount" content="1450">
+  <meta itemprop="keywords" content="Genetic_algorithm"><meta property="og:url" content="http://localhost:1313/posts/genetic-algorithm/">
+  <meta property="og:site_name" content="Doğukan&#39;s Blog">
+  <meta property="og:title" content="Genetic Algorithm">
+  <meta property="og:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-11-24T16:31:08+03:00">
+    <meta property="article:modified_time" content="2022-11-24T16:31:08+03:00">
+    <meta property="article:tag" content="Genetic_algorithm">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Genetic Algorithm"/>
-<meta name="twitter:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Genetic Algorithm">
+  <meta name="twitter:description" content="What is the Genetic Algorithm? The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://dogukanteber.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
 
-        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://dogukanteber.github.io/css/dark.css" />
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
 
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<script src="https://dogukanteber.github.io/js/main.js"></script>
+	<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+		<script src="http://localhost:1313/js/main.js"></script>
 </head>
 
+
 <body>
-	<div class="container wrapper">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
+    <div class="container wrapper">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js"></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-PKHMQYVY49', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -61,15 +72,9 @@ if (!doNotTrack) {
 
 <div class="header">
 	
-		<div class="avatar">
-			<a href="https://dogukanteber.github.io/">
-				<img src="https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg" alt="Doğukan&#39;s Blog" />
-			</a>
-		</div>
-	
-	<h1 class="site-title"><a href="https://dogukanteber.github.io/">Doğukan&#39;s Blog</a></h1>
+	<h1 class="site-title"><a href="http://localhost:1313/">Doğukan&#39;s Blog</a></h1>
 	<div class="site-description"><p>About programming, computing and math</p><nav class="nav social">
-			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
 		</nav>
 	</div>
 
@@ -105,30 +110,31 @@ if (!doNotTrack) {
 </div>
 
 
-		<div class="post">
-			<div class="post-header">
-				
-					<div class="meta">
-						<div class="date">
-							<span class="day">24</span>
-							<span class="rest">Nov 2022</span>
-						</div>
-					</div>
-				
-				<div class="matter">
-					<h1 class="title">Genetic Algorithm</h1>
-				</div>
-			</div>
-					
-			<div class="markdown">
-				<h1 id="what-is-the-genetic-algorithm">What is the Genetic Algorithm?</h1>
+        <div class="post">
+            <div class="post-header">
+                
+                <div class="meta">
+                    <div class="date">
+                        <span class="day">24</span>
+                        <span
+                            class="rest">Nov 2022</span>
+                    </div>
+                </div>
+                
+                <div class="matter">
+                    <h1 class="title">Genetic Algorithm</h1>
+                </div>
+            </div>
+
+            <div class="markdown">
+                <h1 id="what-is-the-genetic-algorithm">What is the Genetic Algorithm?</h1>
 <p>The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.</p>
 <figure>
   <img src="images/ga_first.png" alt="The 3D domain decomposition of original computation domain"/>
   <figcaption><a href="https://www.toptal.com/algorithms/genetic-algorithms">Image source</a></figcaption>
 </figure>
 <h1 id="how-does-the-genetic-algorithm-work">How does the Genetic Algorithm work?</h1>
-<p>The algorithm starts with a population of potential solutions (called chromosomes). Each solution has a fitness value that represents how well that solution solves the problem. The algorithm then selects the best solutions (called parents) and produces new solutions (called offspring) by combining the parents' chromosomes. This is often done by randomly selecting a point in each parent&rsquo;s chromosome and combining the parts before that point with the parts after that point to form the offspring. If a new offspring&rsquo;s fitness is better than its parents', the offspring replaces its parents. Over time, the population should consist mostly of good solutions and the average fitness of the population should increase.</p>
+<p>The algorithm starts with a population of potential solutions (called chromosomes). Each solution has a fitness value that represents how well that solution solves the problem. The algorithm then selects the best solutions (called parents) and produces new solutions (called offspring) by combining the parents&rsquo; chromosomes. This is often done by randomly selecting a point in each parent&rsquo;s chromosome and combining the parts before that point with the parts after that point to form the offspring. If a new offspring&rsquo;s fitness is better than its parents&rsquo;, the offspring replaces its parents. Over time, the population should consist mostly of good solutions and the average fitness of the population should increase.</p>
 <h1 id="what-is-a-chromosome">What is a chromosome?</h1>
 <p>A chromosome is a set of values that represents a potential solution. The representation can be different depending on the problem. There are a few ways to represent a chromosome in the genetic algorithm. A representation can be one of these forms, but not limited to these:</p>
 <ul>
@@ -174,34 +180,34 @@ if (!doNotTrack) {
 <p>Note that stopping criterion depends on the problem. One may run the algorithm X times while others can expect to get a solution that reaches to a specific fitness value.</p>
 <h1 id="pros-and-cons-of-the-ga">Pros and Cons of the GA</h1>
 <table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It can be used to solve problems that are difficult or impossible to solve using traditional methods.</td>
-<td>It is a stochastic method and may not find the optimal solution to a problem.</td>
-</tr>
-<tr>
-<td>It is a versatile tool that can be applied to a wide variety of problems.</td>
-<td>It can be slow, especially when searching for the global optimum of a large problem.</td>
-</tr>
-<tr>
-<td>It is capable of finding solutions that are close to the global optimum.</td>
-<td>It requires a good understanding of the problem in order to set up the parameters properly and interpret the results correctly.</td>
-</tr>
-<tr>
-<td>It is relatively easy to implement and does not require sophisticated programming skills.</td>
-<td></td>
-</tr>
-<tr>
-<td>It can be parallelized and run on multiprocessor systems, which can speed up the search process.</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Pros</th>
+          <th>Cons</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>It can be used to solve problems that are difficult or impossible to solve using traditional methods.</td>
+          <td>It is a stochastic method and may not find the optimal solution to a problem.</td>
+      </tr>
+      <tr>
+          <td>It is a versatile tool that can be applied to a wide variety of problems.</td>
+          <td>It can be slow, especially when searching for the global optimum of a large problem.</td>
+      </tr>
+      <tr>
+          <td>It is capable of finding solutions that are close to the global optimum.</td>
+          <td>It requires a good understanding of the problem in order to set up the parameters properly and interpret the results correctly.</td>
+      </tr>
+      <tr>
+          <td>It is relatively easy to implement and does not require sophisticated programming skills.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>It can be parallelized and run on multiprocessor systems, which can speed up the search process.</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <h1 id="challenges-associated-with-using-the-ga">Challenges associated with using the GA?</h1>
 <p>Some of the challenges associated with using the genetic algorithm are:</p>
@@ -224,53 +230,45 @@ if (!doNotTrack) {
 <p>In the next post, we will solve the traveling salesman problem (TSP) using the genetic algorithm in Java programming language.</p>
 <p>Thank you for reading.</p>
 
-			</div>
+            </div>
 
-			<div class="tags">
-				
-					
-						<ul class="flat">
-							
-							<li><a href="/tags/genetic_algorithm">genetic_algorithm</a></li>
-							
-						</ul>
-					
-				
-			</div><div id="disqus_thread"></div>
-<script type="text/javascript">
-	(function () {
-		
-		
-		if (window.location.hostname == "localhost")
-			return;
-
-		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		var disqus_shortname = 'ink-demo';
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the </a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-	</div>
-	<div class="footer wrapper">
+            <div class="tags">
+                
+                
+                <ul class="flat">
+                    
+                    <li><a href="/tags/genetic_algorithm">genetic_algorithm</a></li>
+                    
+                </ul>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer wrapper">
 	<nav class="nav">
-		<div>2023  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+		<div>2025  © Copyright notice |  <a
+				href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
 </div>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-PKHMQYVY49', 'auto');
-	
-	ga('send', 'pageview');
-}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script><script>
+	feather.replace()
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<script>feather.replace()</script>
 </body>
+
 </html>

@@ -2,7 +2,6 @@ baseURL = 'https://dogukanteber.github.io/'
 languageCode = 'en-us'
 title = "Doğukan's Blog"
 theme = "hugo-ink"
-paginate = 10
 publishDir = "docs"
 
 copyright = "© Copyright notice"
@@ -12,24 +11,38 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 googleAnalytics = "G-PKHMQYVY49"
-disqusShortname = "ink-demo"
+
+# Optional 64x64 avatar image.
+avatar = "https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg"
+# avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+
+featherIconsCDN = true
+
+mode = "auto" # "dark" or "auto"
+# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
 
 [params]
-	subtitle = "About programming, computing and math"
+subtitle = "About programming, computing and math"
 
-	# Optional 64x64 avatar image.
-	avatar = "https://cdn.openai.com/dall-e-2/demos/text2im/astronaut/basketball/minimalist/0.jpg"
-	# avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+[[params.social]]
+icon = "linkedin"
+icon_pack = "fa"
+url = "https://linkedin.com/in/dogukanteber"
 
-	# Content types to disable Disqus on.
-	disableDisqusTypes = []
-	
-	featherIconsCDN = true
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/dogukanteber"
 
-	mode = "auto" # "dark" or "auto"
-	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
-	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
-	# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[pagination]
+pagerSize = 10
 
 # Nav.
 [[menu.main]]
@@ -62,44 +75,28 @@ name = "Tags"
 url = "/tags"
 weight = 6
 
-[[params.social]]
-icon = "linkedin"
-icon_pack = "fa"
-url = "https://linkedin.com/in/dogukanteber"
-
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/dogukanteber"
-
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
-
 [taxonomies]
-   tag = "tags"
-
+tag = "tags"
 
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      linkifyProtocol = 'https'
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = 'github'
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true
-      xhtml = false
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+linkifyProtocol = 'https'
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = 'github'
+[markup.goldmark.parser.attribute]
+block = false
+title = true
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false

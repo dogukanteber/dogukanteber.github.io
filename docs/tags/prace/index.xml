@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PRACE on Doğukan&#39;s Blog</title>
-    <link>https://dogukanteber.github.io/tags/prace/</link>
+    <link>http://localhost:1313/tags/prace/</link>
     <description>Recent content in PRACE on Doğukan&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/prace/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 14:04:52 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/prace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Can You Briefly Explain The Domain Decomposition Method?</title>
-      <link>https://dogukanteber.github.io/posts/domain-decomposition/</link>
+      <link>http://localhost:1313/posts/domain-decomposition/</link>
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/posts/domain-decomposition/</guid>
-      <description>The 3D domain decomposition of original computation domain  Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before.</description>
+      <guid>http://localhost:1313/posts/domain-decomposition/</guid>
+      <description>&lt;figure&gt;&#xA;  &lt;img src=&#34;images/featured_image.png&#34; alt=&#34;The 3D domain decomposition of original computation domain&#34;/&gt;&#xA;  &lt;figcaption&gt;The 3D domain decomposition of original computation domain&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before. Therefore, in this blog post, I will try to explain the domain decomposition method briefly and at the end of the post, I will leave a link to a GitHub repository that contains the exercise description and its solution. Keep in mind that I am not aiming to tell you everything about the domain decomposition but rather scratch the surface. Before further ado, let’s get started.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

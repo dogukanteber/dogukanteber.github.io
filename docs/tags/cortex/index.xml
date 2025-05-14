@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cortex on Doğukan&#39;s Blog</title>
-    <link>https://dogukanteber.github.io/tags/cortex/</link>
-    <description>Recent content in cortex on Doğukan&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Cortex on Doğukan&#39;s Blog</title>
+    <link>http://localhost:1313/tags/cortex/</link>
+    <description>Recent content in Cortex on Doğukan&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 30 May 2023 10:25:11 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/cortex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 May 2023 10:25:11 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cortex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Transformative Journey: My Experience as an LFX Mentee</title>
-      <link>https://dogukanteber.github.io/posts/lfx-mentorship/</link>
+      <link>http://localhost:1313/posts/lfx-mentorship/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/posts/lfx-mentorship/</guid>
-      <description>Hello there, I am Doğukan, and today I want to share a journey that has been nothing short of transformative for me - the LFX mentorship program. Why am I writing about this, you ask? Because I believe that sharing experiences broadens horizons and can inspire others to embark on similar journeys.
-Now, if you are wondering what the LFX mentorship program is, let me enlighten you. This remarkable program offers a structured platform for budding software developers to grow and flourish under the guidance of experienced mentors in the open-source community.</description>
+      <guid>http://localhost:1313/posts/lfx-mentorship/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/cortex_logo.png&#34; alt=&#34;Cortex Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello there, I am Doğukan, and today I want to share a journey that has been nothing short of transformative for me - the LFX mentorship program.&#xA;Why am I writing about this, you ask?&#xA;Because I believe that sharing experiences broadens horizons and can inspire others to embark on similar journeys.&lt;/p&gt;&#xA;&lt;p&gt;Now, if you are wondering what the LFX mentorship program is, let me enlighten you.&#xA;This remarkable program offers a structured platform for budding software developers to grow and flourish under the guidance of experienced mentors in the open-source community.&#xA;It is not just about coding - it is about contributing to projects, learning from the best, and becoming a part of a vibrant and innovative community.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

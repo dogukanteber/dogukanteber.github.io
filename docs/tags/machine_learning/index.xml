@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>machine_learning on Doğukan&#39;s Blog</title>
-    <link>https://dogukanteber.github.io/tags/machine_learning/</link>
-    <description>Recent content in machine_learning on Doğukan&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Machine_learning on Doğukan&#39;s Blog</title>
+    <link>http://localhost:1313/tags/machine_learning/</link>
+    <description>Recent content in Machine_learning on Doğukan&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 09 Oct 2022 20:24:50 +0300</lastBuildDate><atom:link href="https://dogukanteber.github.io/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 20:24:50 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm</title>
-      <link>https://dogukanteber.github.io/posts/univariate_linear_regression/</link>
+      <link>http://localhost:1313/posts/univariate_linear_regression/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      
-      <guid>https://dogukanteber.github.io/posts/univariate_linear_regression/</guid>
-      <description>Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.
-Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features.</description>
+      <guid>http://localhost:1313/posts/univariate_linear_regression/</guid>
+      <description>&lt;p&gt;Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.&lt;/p&gt;&#xA;&lt;p&gt;Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features. However, for now, we will only focus on one variable. Hence, the name univariate linear regression.&#xA;In the end, we want a linear function that fits optimally for the given data set. We can represent this function as:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
