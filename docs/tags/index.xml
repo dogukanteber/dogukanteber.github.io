@@ -2,130 +2,130 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Doğukan&#39;s Blog</title>
-    <link>http://localhost:56293/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Doğukan&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Tue, 30 May 2023 10:25:11 +0300</lastBuildDate>
-    <atom:link href="http://localhost:56293/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Auth-Gateway</title>
-      <link>http://localhost:56293/tags/auth-gateway/</link>
+      <link>http://localhost:1313/tags/auth-gateway/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/tags/auth-gateway/</guid>
+      <guid>http://localhost:1313/tags/auth-gateway/</guid>
       <description></description>
     </item>
     <item>
       <title>Cortex</title>
-      <link>http://localhost:56293/tags/cortex/</link>
+      <link>http://localhost:1313/tags/cortex/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/tags/cortex/</guid>
+      <guid>http://localhost:1313/tags/cortex/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:56293/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Lfx_mentorship</title>
-      <link>http://localhost:56293/tags/lfx_mentorship/</link>
+      <link>http://localhost:1313/tags/lfx_mentorship/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/tags/lfx_mentorship/</guid>
+      <guid>http://localhost:1313/tags/lfx_mentorship/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Source</title>
-      <link>http://localhost:56293/tags/open-source/</link>
+      <link>http://localhost:1313/tags/open-source/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/tags/open-source/</guid>
+      <guid>http://localhost:1313/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>Genetic_algorithm</title>
-      <link>http://localhost:56293/tags/genetic_algorithm/</link>
+      <link>http://localhost:1313/tags/genetic_algorithm/</link>
       <pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate>
-      <guid>http://localhost:56293/tags/genetic_algorithm/</guid>
+      <guid>http://localhost:1313/tags/genetic_algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Gradient_descent</title>
-      <link>http://localhost:56293/tags/gradient_descent/</link>
+      <link>http://localhost:1313/tags/gradient_descent/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/tags/gradient_descent/</guid>
+      <guid>http://localhost:1313/tags/gradient_descent/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear_regression</title>
-      <link>http://localhost:56293/tags/linear_regression/</link>
+      <link>http://localhost:1313/tags/linear_regression/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/tags/linear_regression/</guid>
+      <guid>http://localhost:1313/tags/linear_regression/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine_learning</title>
-      <link>http://localhost:56293/tags/machine_learning/</link>
+      <link>http://localhost:1313/tags/machine_learning/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/tags/machine_learning/</guid>
+      <guid>http://localhost:1313/tags/machine_learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Numpy</title>
-      <link>http://localhost:56293/tags/numpy/</link>
+      <link>http://localhost:1313/tags/numpy/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/tags/numpy/</guid>
+      <guid>http://localhost:1313/tags/numpy/</guid>
       <description></description>
     </item>
     <item>
       <title>Pandas</title>
-      <link>http://localhost:56293/tags/pandas/</link>
+      <link>http://localhost:1313/tags/pandas/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/tags/pandas/</guid>
+      <guid>http://localhost:1313/tags/pandas/</guid>
       <description></description>
     </item>
     <item>
       <title>MPI</title>
-      <link>http://localhost:56293/tags/mpi/</link>
+      <link>http://localhost:1313/tags/mpi/</link>
       <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:56293/tags/mpi/</guid>
+      <guid>http://localhost:1313/tags/mpi/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenFOAM</title>
-      <link>http://localhost:56293/tags/openfoam/</link>
+      <link>http://localhost:1313/tags/openfoam/</link>
       <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:56293/tags/openfoam/</guid>
+      <guid>http://localhost:1313/tags/openfoam/</guid>
       <description></description>
     </item>
     <item>
       <title>Parallel_programming</title>
-      <link>http://localhost:56293/tags/parallel_programming/</link>
+      <link>http://localhost:1313/tags/parallel_programming/</link>
       <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:56293/tags/parallel_programming/</guid>
+      <guid>http://localhost:1313/tags/parallel_programming/</guid>
       <description></description>
     </item>
     <item>
       <title>SoHPC</title>
-      <link>http://localhost:56293/tags/sohpc/</link>
+      <link>http://localhost:1313/tags/sohpc/</link>
       <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:56293/tags/sohpc/</guid>
+      <guid>http://localhost:1313/tags/sohpc/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain_decomposition</title>
-      <link>http://localhost:56293/tags/domain_decomposition/</link>
+      <link>http://localhost:1313/tags/domain_decomposition/</link>
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
-      <guid>http://localhost:56293/tags/domain_decomposition/</guid>
+      <guid>http://localhost:1313/tags/domain_decomposition/</guid>
       <description></description>
     </item>
     <item>
       <title>PRACE</title>
-      <link>http://localhost:56293/tags/prace/</link>
+      <link>http://localhost:1313/tags/prace/</link>
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
-      <guid>http://localhost:56293/tags/prace/</guid>
+      <guid>http://localhost:1313/tags/prace/</guid>
       <description></description>
     </item>
   </channel>

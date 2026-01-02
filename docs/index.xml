@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Doğukan&#39;s Blog</title>
-    <link>http://localhost:56293/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Doğukan&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Tue, 30 May 2023 10:25:11 +0300</lastBuildDate>
-    <atom:link href="http://localhost:56293/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Transformative Journey: My Experience as an LFX Mentee</title>
-      <link>http://localhost:56293/posts/lfx-mentorship/</link>
+      <link>http://localhost:1313/posts/lfx-mentorship/</link>
       <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:56293/posts/lfx-mentorship/</guid>
+      <guid>http://localhost:1313/posts/lfx-mentorship/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/cortex_logo.png&#34; alt=&#34;Cortex Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello there, I am Doğukan, and today I want to share a journey that has been nothing short of transformative for me - the LFX mentorship program.&#xA;Why am I writing about this, you ask?&#xA;Because I believe that sharing experiences broadens horizons and can inspire others to embark on similar journeys.&lt;/p&gt;&#xA;&lt;p&gt;Now, if you are wondering what the LFX mentorship program is, let me enlighten you.&#xA;This remarkable program offers a structured platform for budding software developers to grow and flourish under the guidance of experienced mentors in the open-source community.&#xA;It is not just about coding - it is about contributing to projects, learning from the best, and becoming a part of a vibrant and innovative community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Genetic Algorithm</title>
-      <link>http://localhost:56293/posts/genetic-algorithm/</link>
+      <link>http://localhost:1313/posts/genetic-algorithm/</link>
       <pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate>
-      <guid>http://localhost:56293/posts/genetic-algorithm/</guid>
+      <guid>http://localhost:1313/posts/genetic-algorithm/</guid>
       <description>&lt;h1 id=&#34;what-is-the-genetic-algorithm&#34;&gt;What is the Genetic Algorithm?&lt;/h1&gt;&#xA;&lt;p&gt;The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm</title>
-      <link>http://localhost:56293/posts/univariate_linear_regression/</link>
+      <link>http://localhost:1313/posts/univariate_linear_regression/</link>
       <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:56293/posts/univariate_linear_regression/</guid>
+      <guid>http://localhost:1313/posts/univariate_linear_regression/</guid>
       <description>&lt;p&gt;Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.&lt;/p&gt;&#xA;&lt;p&gt;Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features. However, for now, we will only focus on one variable. Hence, the name univariate linear regression.&#xA;In the end, we want a linear function that fits optimally for the given data set. We can represent this function as:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parallel Programming in OpenFOAM</title>
-      <link>http://localhost:56293/posts/parallel-openfoam/</link>
+      <link>http://localhost:1313/posts/parallel-openfoam/</link>
       <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:56293/posts/parallel-openfoam/</guid>
+      <guid>http://localhost:1313/posts/parallel-openfoam/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/featured_image.png&#34; alt=&#34;OpenFOAM logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.&lt;/p&gt;&#xA;&lt;p&gt;OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Can You Briefly Explain The Domain Decomposition Method?</title>
-      <link>http://localhost:56293/posts/domain-decomposition/</link>
+      <link>http://localhost:1313/posts/domain-decomposition/</link>
       <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
-      <guid>http://localhost:56293/posts/domain-decomposition/</guid>
+      <guid>http://localhost:1313/posts/domain-decomposition/</guid>
       <description>&lt;figure&gt;&#xA;  &lt;img src=&#34;images/featured_image.png&#34; alt=&#34;The 3D domain decomposition of original computation domain&#34;/&gt;&#xA;  &lt;figcaption&gt;The 3D domain decomposition of original computation domain&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before. Therefore, in this blog post, I will try to explain the domain decomposition method briefly and at the end of the post, I will leave a link to a GitHub repository that contains the exercise description and its solution. Keep in mind that I am not aiming to tell you everything about the domain decomposition but rather scratch the surface. Before further ado, let’s get started.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:56293/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56293/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description>&lt;h3 id=&#34;pagetomd-web-to-markdown-converter&#34;&gt;&lt;a href=&#34;#&#34;&gt;PageToMD: Web to Markdown Converter&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A Chrome extension that converts webpage content into clean, structured Markdown format.&lt;/p&gt;&#xA;&lt;h3 id=&#34;auth-gateway&#34;&gt;&lt;a href=&#34;https://github.com/cortexproject/auth-gateway&#34;&gt;auth-gateway&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;auth-gateway is an experimental authentication gateway for &lt;a href=&#34;https://github.com/cortexproject/cortex&#34;&gt;Cortex&lt;/a&gt;. It provides simple configuration to enable users to use multi-tenancy features of Cortex.&lt;/p&gt;&#xA;&lt;h3 id=&#34;paralleldecompose&#34;&gt;&lt;a href=&#34;https://github.com/dogukanteber/hydrology&#34;&gt;parallelDecompose&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;parallelDecompose is a pre-processing utility for &lt;a href=&#34;https://www.openfoam.com/&#34;&gt;OpenFOAM&lt;/a&gt; that decomposes a mesh and fields of a case for parallel execution faster than &lt;a href=&#34;https://www.openfoam.com/documentation/guides/latest/man/decomposePar.html&#34;&gt;decomposePar&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;targus&#34;&gt;&lt;a href=&#34;https://github.com/Yasar-University-Software-Engineering/targus&#34;&gt;targus&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;targus is a tool that solves the target coverage problem in Wireless Sensor Networks (WSNs). It provides an easy-to-use interface that lets you create your own problem instance, solve it, and give statistical information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:56293/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56293/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;I am a fourth-year software engineering student at Yasar University. I have experience in different fields of software engineering such as game programming, back-end development, and security. I am proficient in C, Python, Java and Bash programming languages. Other languages that I am familiar with are C++, Go, and Javascript. I am interested in supercomputing and artificial intelligence. I am doing my bachelor thesis on target coverage problem in WSNs. I am trying to solve the target coverage problem by implementing Genetic Algorithm in serial and parallel. I am also learning machine learning, more specifically reinforcement learning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Open-Source Contributions</title>
-      <link>http://localhost:56293/open_source/</link>
+      <link>http://localhost:1313/open_source/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56293/open_source/</guid>
+      <guid>http://localhost:1313/open_source/</guid>
       <description>&lt;h2 id=&#34;in-progress&#34;&gt;In Progress&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5380&#34;&gt;cortexproject/cortex&lt;/a&gt;: Unifying README.md and docs/_index.md&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cortexproject/auth-gateway&#34;&gt;cortexproject/auth-gateway&lt;/a&gt;: Developing an authentication gateway for &lt;a href=&#34;https://github.com/cortexproject/cortex&#34;&gt;Cortex&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5267&#34;&gt;cortexproject/cortex&lt;/a&gt;: Documenting runtime config&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5250&#34;&gt;cortexproject/cortex&lt;/a&gt;: Fixing a validation error&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5209&#34;&gt;cortexproject/cortex&lt;/a&gt;: Adding a proposal of auth-gateway to Cortex&lt;/p&gt;&#xA;&lt;h2 id=&#34;completed&#34;&gt;Completed&lt;/h2&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5242&#34;&gt;cortexproject/cortex&lt;/a&gt;: Fixed typos and a grammar error&lt;/p&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5367&#34;&gt;cortexproject/cortex&lt;/a&gt;: Fixed a typo&lt;/p&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5378&#34;&gt;cortexproject/cortex&lt;/a&gt;: Updated &amp;ldquo;single instance, single process example&amp;rdquo; in the getting started document&lt;/p&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/cortexproject/cortex/pull/5233&#34;&gt;cortexproject/cortex&lt;/a&gt;: Added unit test&lt;/p&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/vitessio/website/pull/1359&#34;&gt;vitessio/website&lt;/a&gt;: Fixed broken links in the documentation&lt;/p&gt;&#xA;&lt;p&gt;✓ &lt;a href=&#34;https://github.com/dogukanteber/hydrology/pull/5&#34;&gt;hydrology&lt;/a&gt;: Rewrote the serial utility decomposePar in parallel, parallelDecompose. &lt;a href=&#34;https://github.com/dogukanteber/hydrology/tree/main/applications/utilities/parallelProcessing&#34;&gt;Full source-code&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
