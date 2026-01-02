@@ -2,85 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/lfx-mentorship/</loc>
+    <loc>https://dogukanteber.github.io/posts/lfx-mentorship/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/auth-gateway/</loc>
+    <loc>https://dogukanteber.github.io/tags/auth-gateway/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cortex/</loc>
+    <loc>https://dogukanteber.github.io/tags/cortex/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dogukanteber.github.io/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/go/</loc>
+    <loc>https://dogukanteber.github.io/tags/go/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lfx_mentorship/</loc>
+    <loc>https://dogukanteber.github.io/tags/lfx_mentorship/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/open-source/</loc>
+    <loc>https://dogukanteber.github.io/tags/open-source/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://dogukanteber.github.io/posts/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dogukanteber.github.io/tags/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/genetic-algorithm/</loc>
+    <loc>https://dogukanteber.github.io/posts/genetic-algorithm/</loc>
     <lastmod>2022-11-24T16:31:08+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/genetic_algorithm/</loc>
+    <loc>https://dogukanteber.github.io/tags/genetic_algorithm/</loc>
     <lastmod>2022-11-24T16:31:08+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gradient_descent/</loc>
+    <loc>https://dogukanteber.github.io/tags/gradient_descent/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linear_regression/</loc>
+    <loc>https://dogukanteber.github.io/tags/linear_regression/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine_learning/</loc>
+    <loc>https://dogukanteber.github.io/tags/machine_learning/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/numpy/</loc>
+    <loc>https://dogukanteber.github.io/tags/numpy/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pandas/</loc>
+    <loc>https://dogukanteber.github.io/tags/pandas/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/univariate_linear_regression/</loc>
+    <loc>https://dogukanteber.github.io/posts/univariate_linear_regression/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mpi/</loc>
+    <loc>https://dogukanteber.github.io/tags/mpi/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openfoam/</loc>
+    <loc>https://dogukanteber.github.io/tags/openfoam/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/parallel-openfoam/</loc>
+    <loc>https://dogukanteber.github.io/posts/parallel-openfoam/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/parallel_programming/</loc>
+    <loc>https://dogukanteber.github.io/tags/parallel_programming/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sohpc/</loc>
+    <loc>https://dogukanteber.github.io/tags/sohpc/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/domain-decomposition/</loc>
+    <loc>https://dogukanteber.github.io/posts/domain-decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/domain_decomposition/</loc>
+    <loc>https://dogukanteber.github.io/tags/domain_decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/prace/</loc>
+    <loc>https://dogukanteber.github.io/tags/prace/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://dogukanteber.github.io/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://dogukanteber.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/open_source/</loc>
+    <loc>https://dogukanteber.github.io/open_source/</loc>
   </url>
 </urlset>
