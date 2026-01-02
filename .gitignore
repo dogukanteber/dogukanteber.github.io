@@ -13,3 +13,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Hugo build output (using docs/ as publishDir instead)
+public/
