@@ -2,85 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/lfx-mentorship/</loc>
+    <loc>http://localhost:56293/posts/lfx-mentorship/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/auth-gateway/</loc>
+    <loc>http://localhost:56293/tags/auth-gateway/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cortex/</loc>
+    <loc>http://localhost:56293/tags/cortex/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:56293/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/go/</loc>
+    <loc>http://localhost:56293/tags/go/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lfx_mentorship/</loc>
+    <loc>http://localhost:56293/tags/lfx_mentorship/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/open-source/</loc>
+    <loc>http://localhost:56293/tags/open-source/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:56293/posts/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:56293/tags/</loc>
     <lastmod>2023-05-30T10:25:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/genetic-algorithm/</loc>
+    <loc>http://localhost:56293/posts/genetic-algorithm/</loc>
     <lastmod>2022-11-24T16:31:08+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/genetic_algorithm/</loc>
+    <loc>http://localhost:56293/tags/genetic_algorithm/</loc>
     <lastmod>2022-11-24T16:31:08+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gradient_descent/</loc>
+    <loc>http://localhost:56293/tags/gradient_descent/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linear_regression/</loc>
+    <loc>http://localhost:56293/tags/linear_regression/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine_learning/</loc>
+    <loc>http://localhost:56293/tags/machine_learning/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/numpy/</loc>
+    <loc>http://localhost:56293/tags/numpy/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pandas/</loc>
+    <loc>http://localhost:56293/tags/pandas/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/univariate_linear_regression/</loc>
+    <loc>http://localhost:56293/posts/univariate_linear_regression/</loc>
     <lastmod>2022-10-09T20:24:50+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mpi/</loc>
+    <loc>http://localhost:56293/tags/mpi/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openfoam/</loc>
+    <loc>http://localhost:56293/tags/openfoam/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/parallel-openfoam/</loc>
+    <loc>http://localhost:56293/posts/parallel-openfoam/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/parallel_programming/</loc>
+    <loc>http://localhost:56293/tags/parallel_programming/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sohpc/</loc>
+    <loc>http://localhost:56293/tags/sohpc/</loc>
     <lastmod>2022-09-19T16:46:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/domain-decomposition/</loc>
+    <loc>http://localhost:56293/posts/domain-decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/domain_decomposition/</loc>
+    <loc>http://localhost:56293/tags/domain_decomposition/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/prace/</loc>
+    <loc>http://localhost:56293/tags/prace/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:56293/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:56293/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/open_source/</loc>
+    <loc>http://localhost:56293/open_source/</loc>
   </url>
 </urlset>
