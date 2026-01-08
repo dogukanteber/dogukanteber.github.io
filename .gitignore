@@ -16,3 +16,4 @@
 
 # Hugo build output (using docs/ as publishDir instead)
 public/
+internal/
