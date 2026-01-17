@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lessons Learned From Building A Simple AI Agent - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Lessons Learned From Building A Simple AI Agent">
+  <meta itemprop="description" content="Alternative title: my journey of building a simple ai agent
+Lessons Learned from Building a Simple AI Agent — Instead of saying LLM, say Llama3.2 —
+2025 was the year of AI agents. EVERYONE seem to be building their own AI agent. I’ve been following the recent advancements on this topic. I’ve read a lot about building AI agents but I’ve never actually rolled up my sleeves and built my own. However, I needed a problem. A problem that is easy enough that I can solve with an AI agent and important enough that I use it daily instead of building a somewhat good solution and burry it into my file system.">
+  <meta itemprop="datePublished" content="2026-01-16T21:42:58-05:00">
+  <meta itemprop="dateModified" content="2026-01-16T21:42:58-05:00">
+  <meta itemprop="wordCount" content="2382"><meta property="og:url" content="http://localhost:1313/posts/lessons-learned-from-building-simple-ai-agent/">
+  <meta property="og:site_name" content="Doğukan&#39;s Blog">
+  <meta property="og:title" content="Lessons Learned From Building A Simple AI Agent">
+  <meta property="og:description" content="Alternative title: my journey of building a simple ai agent
+Lessons Learned from Building a Simple AI Agent — Instead of saying LLM, say Llama3.2 —
+2025 was the year of AI agents. EVERYONE seem to be building their own AI agent. I’ve been following the recent advancements on this topic. I’ve read a lot about building AI agents but I’ve never actually rolled up my sleeves and built my own. However, I needed a problem. A problem that is easy enough that I can solve with an AI agent and important enough that I use it daily instead of building a somewhat good solution and burry it into my file system.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-16T21:42:58-05:00">
+    <meta property="article:modified_time" content="2026-01-16T21:42:58-05:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lessons Learned From Building A Simple AI Agent">
+  <meta name="twitter:description" content="Alternative title: my journey of building a simple ai agent
+Lessons Learned from Building a Simple AI Agent — Instead of saying LLM, say Llama3.2 —
+2025 was the year of AI agents. EVERYONE seem to be building their own AI agent. I’ve been following the recent advancements on this topic. I’ve read a lot about building AI agents but I’ve never actually rolled up my sleeves and built my own. However, I needed a problem. A problem that is easy enough that I can solve with an AI agent and important enough that I use it daily instead of building a somewhat good solution and burry it into my file system.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
+
+	<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+		<script src="http://localhost:1313/js/main.js"></script>
+</head>
+
+
+<body>
+    <div class="container wrapper">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+<div class="header">
+	
+	<h1 class="site-title"><a href="http://localhost:1313/">Doğukan&#39;s Blog</a></h1>
+	<div class="site-description"><p>About programming, computing and math</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/open_source">Open Source Contributions</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+        <div class="post">
+            <div class="post-header">
+                
+                <div class="meta">
+                    <div class="date">
+                        <span class="day">16</span>
+                        <span
+                            class="rest">Jan 2026</span>
+                    </div>
+                </div>
+                
+                <div class="matter">
+                    <h1 class="title">Lessons Learned From Building A Simple AI Agent</h1>
+                </div>
+            </div>
+
+            <div class="markdown">
+                <p>Alternative title: my journey of building a simple ai agent</p>
+<h1 id="lessons-learned-from-building-a-simple-ai-agent">Lessons Learned from Building a Simple AI Agent</h1>
+<p>&mdash; Instead of saying LLM, say Llama3.2 &mdash;</p>
+<p>2025 was the year of AI agents. EVERYONE seem to be building their own AI agent. I&rsquo;ve been following the recent advancements on this topic. I&rsquo;ve read a lot about building AI agents but I&rsquo;ve never actually rolled up my sleeves and built my own. However, I needed a problem. A problem that is easy enough that I can solve with an AI agent and important enough that I use it daily instead of building a somewhat good solution and burry it into my file system.</p>
+<h2 id="problem-definition">Problem Definition</h2>
+<p>START_TODO: try to embed this paragraph into this section</p>
+<p>You may say that there are already SaaS solutions that make scheduling meetings super easy and you are probably right. But, you probably don&rsquo;t know that I am lazy and cheap. I want a single click to get my availability and I don&rsquo;t want to pay $X for this simple solution each month. So, being a rational and pragmatic software engineer as I am, I rolled up my sleeves and decided to build my own.</p>
+<p>END_TODO: try to embed this paragraph into this section</p>
+<p>I use Gmail at work. I work with different teams. As every company, we need to set meetings to discuss certain things. However, people&rsquo;s calendars change all the time. It never stays the same. I have found myself way too many times in email chains that go: &ldquo;Tell me your availability and I&rsquo;ll find a timeslot that&rsquo;d work for both of us.&rdquo;. This is so annoying for me because it forces me to check my calendar and write down the available time slots. And before you say it, I know that my coworkers can open up Google Calendar, type my name and get my calendar. In an ideal world, they would use Google Calendar&rsquo;s feature and we wouldn&rsquo;t have that conversation. Unfortunately, we aren&rsquo;t living in an ideal world. So, I had to come up with even easier solution that does this job with as little as click as possible without leaving the Gmail.</p>
+<p>You may say: &ldquo;Gmail has &lsquo;Help Me Schedule&rsquo; feature. When you click it, it suggests you available timeslots&rdquo; and I agree with you. It&rsquo;s a great feature. However, it has two shortcomings.</p>
+<p>The first one is that it only gives two days and two timeslots. What if I don&rsquo;t like those recommendations? I&rsquo;d have to click another button and manually add/remove available timeslots. I really don&rsquo;t like that I wish it&rsquo;d give all the available timeslots. If I don&rsquo;t like some of them, I would like to remove them from the list.</p>
+<p>The second one is that it doesn&rsquo;t check other people&rsquo;s calendars. It only checks the current user&rsquo;s calendar which is not what I want. It&rsquo;d be great if it checks everyone in the email chains&rsquo; calendars and come up with timeslot suggestions where everyone is free.</p>
+<p>You may argue that there are third-party tools that handles these problems and more but I&rsquo;d kindly ignore that argument because I am looking for a problem to solve using an AI agent and I don&rsquo;t mind reinventing the wheel to learn new things :)</p>
+<p>Jokes aside, even though I didn&rsquo;t search for it, I&rsquo;m sure that there are great third-party software out there that makes calendar managing super easy and convenient. The problem is that I don&rsquo;t want to pay to these services because I need to solve this tiny little particular problem.</p>
+<h2 id="proposition">Proposition</h2>
+<p>So, my proposition to this problem is building a simple AI agent that does two things:</p>
+<ul>
+<li>checks my calendar and gives my availability (good for scheduling meeting with people outside of your organization)</li>
+<li>checks my calendar and my collegues calendars to suggest available time slots that everyone can make it (only works within the organization)</li>
+</ul>
+<p>This agent will be invoked through a simple button click and it will be embedded in the Gmail toolbar so that the user doesn&rsquo;t have to leave the page.</p>
+<p>The final requirement is that the agent will be FREE. There will no subscriptions, no additional fees etc.</p>
+<h2 id="alternative-introduction">Alternative Introduction</h2>
+<p>So, recently I&rsquo;ve noticed a pattern at my work when scheduling meetings which is checking my calendar and typing out my availability in the email. This started annoying me tooo much. As a result, I built my own agent that checks my calendar and gives me my availability in a given timeframe. For instance, I say &ldquo;how does my schedule look like next Thursay?&rdquo; and the agent returns the available timeslots in my calendar.</p>
+<p>I am glad that that I did it because it taught a lot of things about building an AI agent. I realized that I didn&rsquo;t know anything about building an AI agent despite reading a lot about it.</p>
+<p>One thing that struck me was how difficult it was to build a consistent and reliable agent. Up until now, I built toy agents that does a certain thing most of the time and I&rsquo;ve never deployed them to use in my daily life. This becomes critical because you don&rsquo;t want to get inconsistent results when you are trying to schedule a meeting with someone.</p>
+<p>This was also shocking because the agent that I built is kind of different that the most of the agents that I saw online. For instance, people build research agents, personal tutor agents etc. The outputs these agents produce are very difficult to measure. There are certain metrics and evals out there to observe their accuracy of these agents but no one would bat an eye if they return slightly wrong answer. However, it&rsquo;s not the case in this calendar agent. If it says you are free between 1 PM to 2:30 PM on Tuesday when you are not, it&rsquo;s a big problem. You can immediately give the verdict that this agent produces wrong outputs and therefore it&rsquo;s unrealiable.</p>
+<p>I also forgot to mention that I used llama3.2 as my LLM in this project because I&rsquo;ve been spending a lot of money on these LLM APIs. I decided to stop using them for simple tasks and leverage open-source models. Using an open-source model made things more difficult since they are not as smart as the commercialized models. However, using an open-source model taught me more on how I would structure my code, when I&rsquo;d use LLMs and where I&rsquo;d inject the LLMs.</p>
+<p>Because of these reasons, I spent a lot of time and effort to make this simple agent as reliable as possible. It took several iterations to make it produce reliable outputs.</p>
+<h2 id="first-iteration--building-the-mvp">First Iteration &ndash; Building the MVP</h2>
+<p>I wrote the pseudo code of the agent which is pretty simple:</p>
+<ul>
+<li>User enter natural language such as &ldquo;what&rsquo;s my availability on next week?&rdquo;</li>
+<li>The agent convert that request into a time range (datetime format in Python)</li>
+<li>It pulls the user&rsquo;s calendar to see events in that range</li>
+<li>It generates availability as natural language, &ldquo;Monday, January 12: Completely free (8:00 AM - 5:00 PM) Tuesday, January 13: 8:00 AM - 10:00 AM, 11:00 AM - 2:00 PM, 3:00 PM - 5:00 PM&rdquo; etc.</li>
+</ul>
+<p>At first, I used LLM calls in two spots: translating the natural language to a time range that the program would understand (the first step) and generating availability (the third step, the last step)</p>
+<p>When I ran it, it worked and produced pretty good result but it wasn&rsquo;t even fully correct because it generated inconsistent times in different days, it skipped the available times, it showed 10 PM at night as the available time etc. The good thing though it didn&rsquo;t display the scheduled time and free which was pretty good.</p>
+<h2 id="second-iteration">Second Iteration</h2>
+<p>Upon investigating why my agent was ignoring certain available dates, I realized that my first LLM call, translating user queries into time range, wasn&rsquo;t working properly. It was working pretty good for queries such as &ldquo;am i free tomorrow?&rdquo; or &ldquo;how does my schedule look like this thursday?&rdquo;, it failed to translate queries such as &ldquo;show me my availability next friday?&rdquo; because these types of queries required it to make some calculations to get the required day(s) which LLM was always 1 day off.</p>
+<p>To record my progress, I created a simple test suite of 16 unit tests. Even though this function is undeterministic, we can expect certain outputs based on the given input. So, before making any changes to the function, I wrote the test functions and ran them. As expected, 6 of out 16 failed. The failed test cases were always the ones that included next Friday, next Tuesday etc., phrases that required to do certain math operations.</p>
+<p>I tried tweaking the prompt. I added examples in the prompt which increased the success rate but it was never 100%. There were always one or two cases that failed. Also, it felt like cheating because I was giving the answers to the LLM rather than having it the discover the results on it own. If I were to add new test cases, the accuracy would drop which exactly what happened. When I put the examples in the prompt and I added other test scenerios, more and more cases failed.</p>
+<p>So, I removed those examples and approached the problem from another angle: tool use. At that point it was obvious that the LLM suffered from math operations, not from understanding the user query. So, to help the LLM, I defined all the tools it would need and adjusted the prompt accordingly. I ran the test suite again and this time 100% success! I added more test cases and the success rate stayed at 100%!</p>
+<p>However, when I ran the agent, I still got somewhat accurate results. It skipped a lot of available timeslots and gave inconsistent times such as 7:30 AM on Tuesday, 8 PM on Wednesday, 9 AM on Friday. I explicitly told it that I work between 8 AM and 5 PM.</p>
+<h2 id="third-iteration">Third Iteration</h2>
+<p>I made sure that the first step is working accurately. The second step is already deterministic, it pulls calendar information from the Calendar API. The problem must be the third step: generating availability. I thought I can get away with shoving all the relevant information to this LLM and get the response that I hope for. Since I was working with dumber LLM, I had to be super careful the way I handle the data. I couldn&rsquo;t afford to have extra and unnecessary data that would confuse the LLM.</p>
+<p>At this point, I already knew that LLM couldn&rsquo;t do simple math operations and we already know that LLMs don&rsquo;t have time awareness like we have. I tried tweaking the prompt and got working around 90% but I wasn&rsquo;t satisfied because I believed that this problem can be solved with 99.9% accuracy.</p>
+<p>Then I thought, &ldquo;why would I need an LLM to calculate the availability?&rdquo;. I was so focused on the fact that I was building an AI agent and thought I&rsquo;d have to build most of the component of this agent using LLMs which is not the case. Why would I have an undeterministic component in my app when I can implement the exact same component using traditional good old way date manipulation? And that&rsquo;s exactly what I did. Since I convert the natural language into datetime object and I fetch datetime objects from the Calendar API, the problem is just computing availability from a list of event and a time range which is a deterministic interval problem. Using an LLM for this is overkill and unreliable.</p>
+<p>I replaced this LLM layer with a simple algorithm and I got the result that I wanted!</p>
+<p>Although this project was small, it taught me a lot about the way I look at the AI agents. I learned a lot about making the agents reliable and rethink the way I approach problems that involve LLM components.</p>
+<h2 id="fourth-iteration">Fourth Iteration</h2>
+<p>Do we even need AI for this? Google displays physical button controls in &ldquo;Help me Schedule&rdquo; feature. I thought I&rsquo;d need AI for translating user query into a programmable object. On second thought, I don&rsquo;t think that&rsquo;s necessary either. Adding controls like that Google feature would solve everything and users can select days and different intervals to fetch the available times. The shortcoming of the existing feature is that it doesn&rsquo;t display all the available times. It only returns two time slots for two days. What if I don&rsquo;t like that time? What if an hour/day later/earlier would fit my schedule better? It doesn&rsquo;t account that.</p>
+<p>Also, it&rsquo;s slow. I am mostly certain that they are using Gemini to implement that, though I have to make sure of that. There&rsquo;s no need to add AI into that feature. Solving that problem with AI makes it worse in terms of problem solving and user experience. That goes to show us the lack of thinking when building features/products and letting the hype to rule your judgement without thinking your decisions throughly.</p>
+<p>remove the ai component from the app and complete this section. we could totally discard it as well.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>Just because you are building an AI agent doesn&rsquo;t mean that you have to build most/every component using an LLM.
+Adding LLM calls to your software makes your app unreliable. Make sure it&rsquo;s worth the risk
+LLMs are great for converting natural language into objects that we can manipulate via code. However, do not use LLMs for the things that we can already do with code. Doing that adds unnecessary complexity on top of your application.
+If you have an LLM component, you should test it more throughly than your other functions
+Tool use is a great way to make your agents smarter and increase their capabilities
+Open-source models are not as capable as the commercialized models but they force you to think harder on your system because you can&rsquo;t just shov all your data into them and hope to get answers.
+The more you add LLM calls to your app, the more is becomes fragile and unreliable. Make sure that you are working with objects that you can control. Have multiple validations before and after of each LLM call.</p>
+<p>time_range = parse_time_range(query=query, current_date=current_date)
+events = get_calendar_events(start=time_range.start, end=time_range.end)
+availability = generate_availability(events=events, time_range=time_range)</p>
+
+            </div>
+
+            <div class="tags">
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer wrapper">
+	<nav class="nav">
+		<div>2026  © Copyright notice |  <a
+				href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script><script>
+	feather.replace()
+</script>
+</body>
+
+</html>
