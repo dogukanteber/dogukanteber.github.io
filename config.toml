@@ -24,7 +24,7 @@ mode = "auto" # "dark" or "auto"
 # customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
 
 [params]
-subtitle = "About programming, computing and math"
+subtitle = "About coding, entrepreneurship and life"
 
 [[params.social]]
 icon = "linkedin"

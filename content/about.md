@@ -4,12 +4,14 @@ title: "About"
 type: "page"
 ---
 
-Hey, I'm Doğukan.
+Hi there! I'm Doğukan.
 
-I'm a software engineer who likes building things and figuring out how they work. I enjoy taking ownership of what I build—understanding the full picture, not just my corner of it. Back-end systems, open-source, and the occasional side project keep me busy.
+I am a software engineer who loves software and technology. I view myself as jack of all trades when it comes to software engineering. I am currently working at a non-profit climate research company and am building internal tools for scientists to accelerate their research.
 
-Outside of work, I run and do calisthenics. I'm also into learning foreign languages—there's something satisfying about slowly getting better at something that felt impossible at first.
+These days I am interested in building my own products (open-source/commercial). In this blog, I write about technical problems I face and how I solve them, my thoughts on entrepreneurship and life in general. There's no strict categories. I try to write about anything that I can think of.
 
-This blog is where I write about what I'm learning. Sometimes it's technical, sometimes it's just me trying to figure things out.
+I run and do calisthenics. I am currently learning French as a hobby and am slowly learning about art, specifically impressionism.
+
+If any of these interest you, please do not hesitate to get in touch!
 
 Thanks for stopping by.
