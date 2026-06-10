@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 17 Jan 2026 13:47:02 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 17:19:25 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fluent</title>
+      <link>http://localhost:1313/graveyard/fluent/</link>
+      <pubDate>Wed, 10 Jun 2026 17:19:25 -0400</pubDate>
+      <guid>http://localhost:1313/graveyard/fluent/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Abandoned&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;I have been learning French and was really dissatisfied with the quality of language learning apps because they would force me to follow a static curriculum as anyone else.&lt;/p&gt;&#xA;&lt;p&gt;I hated it and decided to build a personalized language immersion app. It would generate stories based on one&amp;rsquo;s interests, keep track of their progress and progressively generate more difficult stories (i + 1 principle). I even thought about generating music with AI based on their vocabulary.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Use AI to Avoid Typing, Not Thinking</title>
       <link>http://localhost:1313/posts/use-ai-to-avoid-typing-not-thinking/</link>

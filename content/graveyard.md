@@ -20,3 +20,8 @@ Each entry here is a postmortem of an idea, showing how it began, why it went wr
 [calendar-agent](/graveyard/calendar-agent)
 
 **tl;dr:** Built an AI agent to automate meeting scheduling, only to realize the problem was already solved by Google Calendar and the real issue was team habits, not tools.
+
+[fluent](/graveyard/fluent)
+
+**tl;dr:** Built a personalized language immersion app using AI-generated stories, but abandoned it after discovering a competitor already dominated the niche with a superior distribution channel.
+
