@@ -1,8 +1,6 @@
 ---
 title: "Fluent"
-date: 2026-06-10T17:19:25-04:00
 type: "page"
-draft: false
 ---
 
 **Status:** Abandoned

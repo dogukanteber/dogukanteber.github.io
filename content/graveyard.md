@@ -25,3 +25,6 @@ Each entry here is a postmortem of an idea, showing how it began, why it went wr
 
 **tl;dr:** Built a personalized language immersion app using AI-generated stories, but abandoned it after discovering a competitor already dominated the niche with a superior distribution channel.
 
+[gif-ai](/graveyard/gif-ai)
+
+**tl;dr:** Built an AI agent to suggest GIFs in chats, but killed it after realizing AI lacks the humor and social context needed for good GIF selection.

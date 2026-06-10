@@ -1,8 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
 type: "page"
-draft: false
 ---
 
 **Status:** Failed / Killed / Abandoned

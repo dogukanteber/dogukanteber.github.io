@@ -2,29 +2,27 @@
 <html>
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Graveyard - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>GIF AI - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	
-  <meta itemprop="name" content="Graveyard">
-  <meta itemprop="description" content="Documenting failures is just as important as documenting success if not more. This is where I document the ideas that didn’t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.
-Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.
-biruni
-tl;dr: Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.">
-  <meta itemprop="wordCount" content="210"><meta property="og:url" content="http://localhost:1313/graveyard/">
+  <meta itemprop="name" content="GIF AI">
+  <meta itemprop="description" content="Status: Killed
+The Idea To my defense, I was bored when I came up with this idea.
+I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this – an AI agent that reads my chat and suggests GIFs based on the conversation.">
+  <meta itemprop="wordCount" content="196"><meta property="og:url" content="http://localhost:1313/graveyard/gif-ai/">
   <meta property="og:site_name" content="Doğukan&#39;s Blog">
-  <meta property="og:title" content="Graveyard">
-  <meta property="og:description" content="Documenting failures is just as important as documenting success if not more. This is where I document the ideas that didn’t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.
-Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.
-biruni
-tl;dr: Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.">
+  <meta property="og:title" content="GIF AI">
+  <meta property="og:description" content="Status: Killed
+The Idea To my defense, I was bored when I came up with this idea.
+I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this – an AI agent that reads my chat and suggests GIFs based on the conversation.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
+    <meta property="article:section" content="graveyard">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Graveyard">
-  <meta name="twitter:description" content="Documenting failures is just as important as documenting success if not more. This is where I document the ideas that didn’t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.
-Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.
-biruni
-tl;dr: Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.">
+  <meta name="twitter:title" content="GIF AI">
+  <meta name="twitter:description" content="Status: Killed
+The Idea To my defense, I was bored when I came up with this idea.
+I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this – an AI agent that reads my chat and suggests GIFs based on the conversation.">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
@@ -108,24 +106,22 @@ tl;dr: Built a deterministic API for LLM datetime operations without verifying t
             <div class="post-header">
                 
                 <div class="matter">
-                    <h1 class="title">Graveyard</h1>
+                    <h1 class="title">GIF AI</h1>
                 </div>
             </div>
 
             <div class="markdown">
-                <p>Documenting failures is just as important as documenting success if not more.  This is where I document the ideas that didn&rsquo;t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.</p>
-<p>Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.</p>
-<hr>
-<p><a href="/graveyard/biruni">biruni</a></p>
-<p><strong>tl;dr:</strong> Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.</p>
-<p><a href="/graveyard/linea">linea</a></p>
-<p><strong>tl;dr:</strong> Built a hair style try-on app for barbers and consumers, but spent too much time on plumbing before realizing the market was saturated and the business model had high churn.</p>
-<p><a href="/graveyard/calendar-agent">calendar-agent</a></p>
-<p><strong>tl;dr:</strong> Built an AI agent to automate meeting scheduling, only to realize the problem was already solved by Google Calendar and the real issue was team habits, not tools.</p>
-<p><a href="/graveyard/fluent">fluent</a></p>
-<p><strong>tl;dr:</strong> Built a personalized language immersion app using AI-generated stories, but abandoned it after discovering a competitor already dominated the niche with a superior distribution channel.</p>
-<p><a href="/graveyard/gif-ai">gif-ai</a></p>
-<p><strong>tl;dr:</strong> Built an AI agent to suggest GIFs in chats, but killed it after realizing AI lacks the humor and social context needed for good GIF selection.</p>
+                <p><strong>Status:</strong> Killed</p>
+<h3 id="the-idea">The Idea</h3>
+<p>To my defense, I was bored when I came up with this idea.</p>
+<p>I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this &ndash; an AI agent that reads my chat and suggests GIFs based on the conversation.</p>
+<h3 id="what-went-wrong">What Went Wrong</h3>
+<p>Some GIFs require true taste and humor which AI sucks at but there are many low-hanging and funny cases where I thought it could do well. Well, I couldn&rsquo;t have been more wrong.</p>
+<p>The suggestions that AI came up with was pretty lame. It was having this socially oblivious person in a group chat that always sends the most irrelevant messages. It was a good exercise but no one would pay for this and keeping it up and paying for LLM calls didn&rsquo;t make any sense.</p>
+<h3 id="lessons-learned">Lessons Learned</h3>
+<ul>
+<li>Just because you can do something with AI doesn&rsquo;t mean that you should. Know the limitations of the technologies that you work with. Gen AI&rsquo;s biggest limitation is its lack of novelty.</li>
+</ul>
 
             </div>
 
