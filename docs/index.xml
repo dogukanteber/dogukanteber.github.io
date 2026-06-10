@@ -73,6 +73,13 @@
       <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Failed&lt;/p&gt;&#xA;&lt;p&gt;I did many anti-patterns in this project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Heard many people complaining LLMs keep messing up the datetime operations. So, I decided to build a deterministic API as a tool to abstract away this problem for any type of time-bounded agent (scheduling, personal assistant, etc.).&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;First, I didn&amp;rsquo;t verify the problem. I didn&amp;rsquo;t reproduce the problem on my own, which was very trivial, nor talked to potential customers. I assumed there was a problem by reading a couple of outdated threads online.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Calendar Agent</title>
+      <link>http://localhost:1313/graveyard/calendar-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/graveyard/calendar-agent/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Killed&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.&lt;/p&gt;&#xA;&lt;p&gt;I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Graveyard</title>
       <link>http://localhost:1313/graveyard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

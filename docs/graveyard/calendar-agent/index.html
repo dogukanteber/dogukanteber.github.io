@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Calendar Agent - Doğukan&#39;s Blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Calendar Agent">
+  <meta itemprop="description" content="Status: Killed
+The Idea Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.
+I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.
+What Went Wrong As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.">
+  <meta itemprop="wordCount" content="220"><meta property="og:url" content="http://localhost:1313/graveyard/calendar-agent/">
+  <meta property="og:site_name" content="Doğukan&#39;s Blog">
+  <meta property="og:title" content="Calendar Agent">
+  <meta property="og:description" content="Status: Killed
+The Idea Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.
+I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.
+What Went Wrong As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="graveyard">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calendar Agent">
+  <meta name="twitter:description" content="Status: Killed
+The Idea Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.
+I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.
+What Went Wrong As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
+
+	<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+		<script src="http://localhost:1313/js/main.js"></script>
+</head>
+
+
+<body>
+    <div class="container wrapper">
+        
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+<div class="header">
+	
+	<h1 class="site-title"><a href="http://localhost:1313/">Doğukan&#39;s Blog</a></h1>
+	<div class="site-description"><p>About coding, entrepreneurship and life</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://linkedin.com/in/dogukanteber" title=""><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/dogukanteber" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Projects</a>
+			</li>
+			
+			<li>
+				<a href="/graveyard">Graveyard</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+        <div class="post">
+            <div class="post-header">
+                
+                <div class="matter">
+                    <h1 class="title">Calendar Agent</h1>
+                </div>
+            </div>
+
+            <div class="markdown">
+                <p><strong>Status:</strong> Killed</p>
+<h3 id="the-idea">The Idea</h3>
+<p>Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.</p>
+<p>I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.</p>
+<h3 id="what-went-wrong">What Went Wrong</h3>
+<p>As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.</p>
+<p>Upon forcing a couple of my colleagues to use it, I realized that this problem was solved many times by different people. We already had Google Calendar and it makes meeting scheduling very easy with a few clicks and merging other people&rsquo;s calendars.</p>
+<p>Our issue was not knowing how to keep our calendars up-to-date and use the existing solutions properly. We didn&rsquo;t need an AI-washed solution. We needed to follow fundamental principles when working as a remote team.</p>
+<h3 id="lessons-learned">Lessons Learned</h3>
+<ul>
+<li>Before building anything, do research to see if the problem you are trying to solve is solved by others. Do not reinvent the wheel. The best solutions are the ones that do not require writing code.</li>
+</ul>
+
+            </div>
+
+            <div class="tags">
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer wrapper">
+	<nav class="nav">
+		<div>2026  © Copyright notice |  <a
+				href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKHMQYVY49"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PKHMQYVY49');
+        }
+      </script><script>
+	feather.replace()
+</script>
+</body>
+
+</html>

@@ -17,4 +17,6 @@ Each entry here is a postmortem of an idea, showing how it began, why it went wr
 
 **tl;dr:** Built a hair style try-on app for barbers and consumers, but spent too much time on plumbing before realizing the market was saturated and the business model had high churn.
 
-[calendar-agent](/graveyard/calendar)
+[calendar-agent](/graveyard/calendar-agent)
+
+**tl;dr:** Built an AI agent to automate meeting scheduling, only to realize the problem was already solved by Google Calendar and the real issue was team habits, not tools.

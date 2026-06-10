@@ -87,6 +87,8 @@
   </url><url>
     <loc>http://localhost:1313/graveyard/biruni/</loc>
   </url><url>
+    <loc>http://localhost:1313/graveyard/calendar-agent/</loc>
+  </url><url>
     <loc>http://localhost:1313/graveyard/</loc>
   </url><url>
     <loc>http://localhost:1313/graveyard/linea/</loc>
