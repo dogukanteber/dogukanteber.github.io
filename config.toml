@@ -61,19 +61,14 @@ url = "/projects"
 weight = 3
 
 [[menu.main]]
-name = "Open Source Contributions"
-url = "/open_source"
+name = "Graveyard"
+url = "/graveyard"
 weight = 4
 
 [[menu.main]]
 name = "About"
 url = "/about"
 weight = 5
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 6
 
 [taxonomies]
 tag = "tags"

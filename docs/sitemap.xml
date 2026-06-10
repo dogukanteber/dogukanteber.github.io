@@ -83,10 +83,12 @@
     <loc>http://localhost:1313/tags/prace/</loc>
     <lastmod>2022-09-08T14:04:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/open_source/</loc>
+    <loc>http://localhost:1313/graveyard/biruni/</loc>
+  </url><url>
+    <loc>http://localhost:1313/graveyard/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
   </url>
 </urlset>
