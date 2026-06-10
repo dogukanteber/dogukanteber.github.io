@@ -89,6 +89,8 @@
   </url><url>
     <loc>http://localhost:1313/graveyard/</loc>
   </url><url>
+    <loc>http://localhost:1313/graveyard/linea/</loc>
+  </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url>
 </urlset>

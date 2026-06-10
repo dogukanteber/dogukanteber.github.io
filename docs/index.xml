@@ -80,6 +80,13 @@
       <description>&lt;p&gt;Documenting failures is just as important as documenting success if not more.  This is where I document the ideas that didn&amp;rsquo;t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.&lt;/p&gt;&#xA;&lt;p&gt;Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/graveyard/biruni&#34;&gt;biruni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>linea</title>
+      <link>http://localhost:1313/graveyard/linea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/graveyard/linea/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Failed&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Had one too many bad haircut and decided to build a hair style try-on app for males, mostly for myself &amp;ndash; a mobile app wrapper around a vision model.&lt;/p&gt;&#xA;&lt;p&gt;I tried a couple of existing solutions, didn&amp;rsquo;t like the results. Decided to build my own by using better models and changing the angle from B2C to B2B, barbers.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;I could have built a dumb prototype, responsive web app, could have gone to barbers to get their opinions but instead I jumped straight into the code and started building the app.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

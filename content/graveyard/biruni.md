@@ -19,6 +19,6 @@ I then chatted with a chatbot to verify the problem which eagerly agreed that it
 
 When it was time to market it, I didn't know who to sell. I only then did some market research only to find out that many people already had solved this problem on their own by integrating deterministic Python tool calls.
 
-### Lesson Learned
+### Lessons Learned
 
-Validate the problem first! Talk to people who are building the software for.
+- Validate the problem first! Talk to people who are building the software for.
