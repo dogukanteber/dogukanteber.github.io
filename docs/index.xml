@@ -1,118 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Doğukan&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Doğukan&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 17 Jan 2026 13:47:02 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Use AI to Avoid Typing, Not Thinking</title>
-      <link>http://localhost:1313/posts/use-ai-to-avoid-typing-not-thinking/</link>
-      <pubDate>Sat, 17 Jan 2026 13:47:02 -0500</pubDate>
-      <guid>http://localhost:1313/posts/use-ai-to-avoid-typing-not-thinking/</guid>
-      <description>&lt;p&gt;Famous tech leaders claim programmers are done in 2026. That&amp;rsquo;s not quite right. AI won&amp;rsquo;t replace great engineers, but it will make them even more valuable. It will also widen the gap between those who thrive and those who struggle.&lt;/p&gt;&#xA;&lt;p&gt;AI-assisted coding is mind-blowing, but it&amp;rsquo;s a double-edged sword. Used carelessly, it accelerates the production of low-quality code. Used wisely, it amplifies what skilled engineers can accomplish. This post breaks down how AI is reshaping the industry and what you need to do to stay relevant—or better yet, become irreplaceable.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Three Mistakes I Keep Making When Setting Goals</title>
-      <link>http://localhost:1313/posts/how-to-set-goals/</link>
-      <pubDate>Sat, 10 Jan 2026 08:07:56 -0500</pubDate>
-      <guid>http://localhost:1313/posts/how-to-set-goals/</guid>
-      <description>&lt;p&gt;Like every December, I sat down last month to reflect on what I accomplished this year and plan for the next one. I&amp;rsquo;ve been doing this for almost three years now, and somehow I keep making the same mistakes—setting goals that are vague, out of my control, or impossible to sustain.&lt;/p&gt;&#xA;&lt;p&gt;Over time, I&amp;rsquo;ve picked up a few things that actually help. We&amp;rsquo;re still at the beginning of the year, so it&amp;rsquo;s not too late to set or update your resolutions. Here&amp;rsquo;s what I&amp;rsquo;ve learned.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>A Transformative Journey: My Experience as an LFX Mentee</title>
-      <link>http://localhost:1313/posts/lfx-mentorship/</link>
-      <pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate>
-      <guid>http://localhost:1313/posts/lfx-mentorship/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;images/cortex_logo.png&#34; alt=&#34;Cortex Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello there, I am Doğukan, and today I want to share a journey that has been nothing short of transformative for me - the LFX mentorship program.&#xA;Why am I writing about this, you ask?&#xA;Because I believe that sharing experiences broadens horizons and can inspire others to embark on similar journeys.&lt;/p&gt;&#xA;&lt;p&gt;Now, if you are wondering what the LFX mentorship program is, let me enlighten you.&#xA;This remarkable program offers a structured platform for budding software developers to grow and flourish under the guidance of experienced mentors in the open-source community.&#xA;It is not just about coding - it is about contributing to projects, learning from the best, and becoming a part of a vibrant and innovative community.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Genetic Algorithm</title>
-      <link>http://localhost:1313/posts/genetic-algorithm/</link>
-      <pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate>
-      <guid>http://localhost:1313/posts/genetic-algorithm/</guid>
-      <description>&lt;h1 id=&#34;what-is-the-genetic-algorithm&#34;&gt;What is the Genetic Algorithm?&lt;/h1&gt;&#xA;&lt;p&gt;The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm</title>
-      <link>http://localhost:1313/posts/univariate_linear_regression/</link>
-      <pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate>
-      <guid>http://localhost:1313/posts/univariate_linear_regression/</guid>
-      <description>&lt;p&gt;Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.&lt;/p&gt;&#xA;&lt;p&gt;Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features. However, for now, we will only focus on one variable. Hence, the name univariate linear regression.&#xA;In the end, we want a linear function that fits optimally for the given data set. We can represent this function as:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Parallel Programming in OpenFOAM</title>
-      <link>http://localhost:1313/posts/parallel-openfoam/</link>
-      <pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate>
-      <guid>http://localhost:1313/posts/parallel-openfoam/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;images/featured_image.png&#34; alt=&#34;OpenFOAM logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.&lt;/p&gt;&#xA;&lt;p&gt;OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Can You Briefly Explain The Domain Decomposition Method?</title>
-      <link>http://localhost:1313/posts/domain-decomposition/</link>
-      <pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate>
-      <guid>http://localhost:1313/posts/domain-decomposition/</guid>
-      <description>&lt;figure&gt;&#xA;  &lt;img src=&#34;images/featured_image.png&#34; alt=&#34;The 3D domain decomposition of original computation domain&#34;/&gt;&#xA;  &lt;figcaption&gt;The 3D domain decomposition of original computation domain&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before. Therefore, in this blog post, I will try to explain the domain decomposition method briefly and at the end of the post, I will leave a link to a GitHub repository that contains the exercise description and its solution. Keep in mind that I am not aiming to tell you everything about the domain decomposition but rather scratch the surface. Before further ado, let’s get started.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Hi there! I&amp;rsquo;m Doğukan.&lt;/p&gt;&#xA;&lt;p&gt;I am a software engineer who loves software and technology. I view myself as jack of all trades when it comes to software engineering. I am currently working at a non-profit climate research company and am building internal tools for scientists to accelerate their research.&lt;/p&gt;&#xA;&lt;p&gt;These days I am interested in building my own products (open-source/commercial). In this blog, I write about technical problems I face and how I solve them, my thoughts on entrepreneurship and life in general. There&amp;rsquo;s no strict categories. I try to write about anything that I can think of.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>biruni</title>
-      <link>http://localhost:1313/graveyard/biruni/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/biruni/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Failed&lt;/p&gt;&#xA;&lt;p&gt;I did many anti-patterns in this project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Heard many people complaining LLMs keep messing up the datetime operations. So, I decided to build a deterministic API as a tool to abstract away this problem for any type of time-bounded agent (scheduling, personal assistant, etc.).&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;First, I didn&amp;rsquo;t verify the problem. I didn&amp;rsquo;t reproduce the problem on my own, which was very trivial, nor talked to potential customers. I assumed there was a problem by reading a couple of outdated threads online.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Calendar Agent</title>
-      <link>http://localhost:1313/graveyard/calendar-agent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/calendar-agent/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Killed&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.&lt;/p&gt;&#xA;&lt;p&gt;I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Fluent</title>
-      <link>http://localhost:1313/graveyard/fluent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/fluent/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Abandoned&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;I have been learning French and was really dissatisfied with the quality of language learning apps because they would force me to follow a static curriculum as anyone else.&lt;/p&gt;&#xA;&lt;p&gt;I hated it and decided to build a personalized language immersion app. It would generate stories based on one&amp;rsquo;s interests, keep track of their progress and progressively generate more difficult stories (i + 1 principle). I even thought about generating music with AI based on their vocabulary.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GIF AI</title>
-      <link>http://localhost:1313/graveyard/gif-ai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/gif-ai/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Killed&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;To my defense, I was bored when I came up with this idea.&lt;/p&gt;&#xA;&lt;p&gt;I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this &amp;ndash; an AI agent that reads my chat and suggests GIFs based on the conversation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Graveyard</title>
-      <link>http://localhost:1313/graveyard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/</guid>
-      <description>&lt;p&gt;Documenting failures is just as important as documenting success if not more.  This is where I document the ideas that didn&amp;rsquo;t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.&lt;/p&gt;&#xA;&lt;p&gt;Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/graveyard/biruni&#34;&gt;biruni&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>linea</title>
-      <link>http://localhost:1313/graveyard/linea/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/graveyard/linea/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Failed&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;&#xA;&lt;p&gt;Had one too many bad haircut and decided to build a hair style try-on app for males, mostly for myself &amp;ndash; a mobile app wrapper around a vision model.&lt;/p&gt;&#xA;&lt;p&gt;I tried a couple of existing solutions, didn&amp;rsquo;t like the results. Decided to build my own by using better models and changing the angle from B2C to B2B, barbers.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h3&gt;&#xA;&lt;p&gt;I could have built a dumb prototype, responsive web app, could have gone to barbers to get their opinions but instead I jumped straight into the code and started building the app.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;p&gt;Things I built and am still tinkering with.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;yaz&#34;&gt;Yaz&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;building&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;An AI-assisted writing tool that amplifies one&amp;rsquo;s writing ability by challenging their thoughts. It helps you come up with better words and phrases to frame your thoughts. The writer is in control of their writing and the app acts as a co-pilot. It never generates text for the writer, only suggestions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;cartography-website&#34;&gt;Cartography Website&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;building - Woodwell Climate Research Center&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;A website for inquirying custom cartography services. It includes internal dashboard for managing requests for the staff.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Doğukan's Blog</title><link>https://dogukanteber.github.io/</link><description>Recent content on Doğukan's Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright notice</copyright><lastBuildDate>Sat, 17 Jan 2026 13:47:02 -0500</lastBuildDate><atom:link href="https://dogukanteber.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Use AI to Avoid Typing, Not Thinking</title><link>https://dogukanteber.github.io/posts/use-ai-to-avoid-typing-not-thinking/</link><pubDate>Sat, 17 Jan 2026 13:47:02 -0500</pubDate><guid>https://dogukanteber.github.io/posts/use-ai-to-avoid-typing-not-thinking/</guid><description>&lt;p>Famous tech leaders claim programmers are done in 2026. That&amp;rsquo;s not quite right. AI won&amp;rsquo;t replace great engineers, but it will make them even more valuable. It will also widen the gap between those who thrive and those who struggle.&lt;/p>
+&lt;p>AI-assisted coding is mind-blowing, but it&amp;rsquo;s a double-edged sword. Used carelessly, it accelerates the production of low-quality code. Used wisely, it amplifies what skilled engineers can accomplish. This post breaks down how AI is reshaping the industry and what you need to do to stay relevant—or better yet, become irreplaceable.&lt;/p></description></item><item><title>Three Mistakes I Keep Making When Setting Goals</title><link>https://dogukanteber.github.io/posts/how-to-set-goals/</link><pubDate>Sat, 10 Jan 2026 08:07:56 -0500</pubDate><guid>https://dogukanteber.github.io/posts/how-to-set-goals/</guid><description>&lt;p>Like every December, I sat down last month to reflect on what I accomplished this year and plan for the next one. I&amp;rsquo;ve been doing this for almost three years now, and somehow I keep making the same mistakes—setting goals that are vague, out of my control, or impossible to sustain.&lt;/p>
+&lt;p>Over time, I&amp;rsquo;ve picked up a few things that actually help. We&amp;rsquo;re still at the beginning of the year, so it&amp;rsquo;s not too late to set or update your resolutions. Here&amp;rsquo;s what I&amp;rsquo;ve learned.&lt;/p></description></item><item><title>A Transformative Journey: My Experience as an LFX Mentee</title><link>https://dogukanteber.github.io/posts/lfx-mentorship/</link><pubDate>Tue, 30 May 2023 10:25:11 +0300</pubDate><guid>https://dogukanteber.github.io/posts/lfx-mentorship/</guid><description>&lt;p>&lt;img src="images/cortex_logo.png" alt="Cortex Logo">&lt;/p>
+&lt;p>Hello there, I am Doğukan, and today I want to share a journey that has been nothing short of transformative for me - the LFX mentorship program.
+Why am I writing about this, you ask?
+Because I believe that sharing experiences broadens horizons and can inspire others to embark on similar journeys.&lt;/p>
+&lt;p>Now, if you are wondering what the LFX mentorship program is, let me enlighten you.
+This remarkable program offers a structured platform for budding software developers to grow and flourish under the guidance of experienced mentors in the open-source community.
+It is not just about coding - it is about contributing to projects, learning from the best, and becoming a part of a vibrant and innovative community.&lt;/p></description></item><item><title>Genetic Algorithm</title><link>https://dogukanteber.github.io/posts/genetic-algorithm/</link><pubDate>Thu, 24 Nov 2022 16:31:08 +0300</pubDate><guid>https://dogukanteber.github.io/posts/genetic-algorithm/</guid><description>&lt;h1 id="what-is-the-genetic-algorithm">What is the Genetic Algorithm?&lt;/h1>
+&lt;p>The genetic algorithm is a search heuristic that is used to find optimal or near-optimal solutions to problems that can be represented as a set of discrete values. This heuristic is often used in optimization and machine learning problems. The genetic algorithm works by creating a population of potential solutions and then iteratively improving the population by applying a set of operators, such as selection, crossover, and mutation. It is a type of optimization algorithm that is inspired by the process of natural selection. The algorithm mimics the process of natural selection in order to find the best solution to a problem.&lt;/p></description></item><item><title>Univariate Linear Regression Implementation Using Gradient Descent Algorithm</title><link>https://dogukanteber.github.io/posts/univariate_linear_regression/</link><pubDate>Sun, 09 Oct 2022 20:24:50 +0300</pubDate><guid>https://dogukanteber.github.io/posts/univariate_linear_regression/</guid><description>&lt;p>Linear regression is one of the basic and powerful algorithms in machine learning. In this post, I will try to explain how to implement linear regression using a gradient descent algorithm.&lt;/p>
+&lt;p>Before jumping right into the code, let me briefly talk about what linear regression is. Linear regression is one of the supervised learning algorithms. It performs a regression task and models a target prediction value based on independent variables. The independent variables are also called features. However, for now, we will only focus on one variable. Hence, the name univariate linear regression.
+In the end, we want a linear function that fits optimally for the given data set. We can represent this function as:&lt;/p></description></item><item><title>Parallel Programming in OpenFOAM</title><link>https://dogukanteber.github.io/posts/parallel-openfoam/</link><pubDate>Mon, 19 Sep 2022 16:46:13 +0300</pubDate><guid>https://dogukanteber.github.io/posts/parallel-openfoam/</guid><description>&lt;p>&lt;img src="images/featured_image.png" alt="OpenFOAM logo">&lt;/p>
+&lt;p>OpenFOAM is a widely used CFD toolbox in academia and industry. It is also used to solve HPC problems related to fluid dynamics. However, some problems can take too much time to execute. For computation-heavy problems, parallel programming can dramatically reduce the computation time.&lt;/p>
+&lt;p>OpenFOAM has native support for parallel programming with MPI but writing parallel programs in OpenFOAM is not the same as writing parallel programs with MPI.&lt;/p></description></item><item><title>Can You Briefly Explain The Domain Decomposition Method?</title><link>https://dogukanteber.github.io/posts/domain-decomposition/</link><pubDate>Thu, 08 Sep 2022 14:04:52 +0300</pubDate><guid>https://dogukanteber.github.io/posts/domain-decomposition/</guid><description>&lt;figure>
+ &lt;img src="images/featured_image.png" alt="The 3D domain decomposition of original computation domain"/>
+ &lt;figcaption>The 3D domain decomposition of original computation domain&lt;/figcaption>
+&lt;/figure>
+&lt;p>Before the Summer of HPC started, my mentor contacted us and gave us an exercise to familiarize ourselves with the MPI library and parallel programming. The exercise required us to use the domain decomposition method and at that time, I had no idea what it is. I searched the Web to learn more about it and eventually solved the exercise but it was difficult topic to learn, especially for beginners who have not experienced parallel programming before. Therefore, in this blog post, I will try to explain the domain decomposition method briefly and at the end of the post, I will leave a link to a GitHub repository that contains the exercise description and its solution. Keep in mind that I am not aiming to tell you everything about the domain decomposition but rather scratch the surface. Before further ado, let’s get started.&lt;/p></description></item><item><title>About</title><link>https://dogukanteber.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/about/</guid><description>&lt;p>Hi there! I&amp;rsquo;m Doğukan.&lt;/p>
+&lt;p>I am a software engineer who loves software and technology. I view myself as jack of all trades when it comes to software engineering. I am currently working at a non-profit climate research company and am building internal tools for scientists to accelerate their research.&lt;/p>
+&lt;p>These days I am interested in building my own products (open-source/commercial). In this blog, I write about technical problems I face and how I solve them, my thoughts on entrepreneurship and life in general. There&amp;rsquo;s no strict categories. I try to write about anything that I can think of.&lt;/p></description></item><item><title>biruni</title><link>https://dogukanteber.github.io/graveyard/biruni/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/biruni/</guid><description>&lt;p>&lt;strong>Status:&lt;/strong> Failed&lt;/p>
+&lt;p>I did many anti-patterns in this project.&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>Heard many people complaining LLMs keep messing up the datetime operations. So, I decided to build a deterministic API as a tool to abstract away this problem for any type of time-bounded agent (scheduling, personal assistant, etc.).&lt;/p>
+&lt;h3 id="what-went-wrong">What Went Wrong&lt;/h3>
+&lt;p>First, I didn&amp;rsquo;t verify the problem. I didn&amp;rsquo;t reproduce the problem on my own, which was very trivial, nor talked to potential customers. I assumed there was a problem by reading a couple of outdated threads online.&lt;/p></description></item><item><title>Calendar Agent</title><link>https://dogukanteber.github.io/graveyard/calendar-agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/calendar-agent/</guid><description>&lt;p>&lt;strong>Status:&lt;/strong> Killed&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>Meeting scheduling in our company was pretty manual and annoying. Everyone was typing their availability over email when a meeting needed to be scheduled.&lt;/p>
+&lt;p>I decided to automate this process by having a background agent that reads our Gmail threads, schedules meetings, sends invites automatically with a single click in the Gmail interface.&lt;/p>
+&lt;h3 id="what-went-wrong">What Went Wrong&lt;/h3>
+&lt;p>As always, before talking to anyone, I immediately started building the MVP. I built the agent using a local SLM and optimized it for meeting scheduling. On top of that, I built a Slack bot because communication is scattered through both Gmail and Slack.&lt;/p></description></item><item><title>Fluent</title><link>https://dogukanteber.github.io/graveyard/fluent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/fluent/</guid><description>&lt;p>&lt;strong>Status:&lt;/strong> Abandoned&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>I have been learning French and was really dissatisfied with the quality of language learning apps because they would force me to follow a static curriculum as anyone else.&lt;/p>
+&lt;p>I hated it and decided to build a personalized language immersion app. It would generate stories based on one&amp;rsquo;s interests, keep track of their progress and progressively generate more difficult stories (i + 1 principle). I even thought about generating music with AI based on their vocabulary.&lt;/p></description></item><item><title>GIF AI</title><link>https://dogukanteber.github.io/graveyard/gif-ai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/gif-ai/</guid><description>&lt;p>&lt;strong>Status:&lt;/strong> Killed&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>To my defense, I was bored when I came up with this idea.&lt;/p>
+&lt;p>I was using a lot of GIFs when communicating over text. It got to a point where I was too lazy to click several buttons and type what I think would be a good GIF. And, I decided to automate this &amp;ndash; an AI agent that reads my chat and suggests GIFs based on the conversation.&lt;/p></description></item><item><title>Graveyard</title><link>https://dogukanteber.github.io/graveyard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/</guid><description>&lt;p>Documenting failures is just as important as documenting success if not more. This is where I document the ideas that didn&amp;rsquo;t quite make it, the mistakes I made along the way, and the lessons I learned from failing to build products.&lt;/p>
+&lt;p>Each entry here is a postmortem of an idea, showing how it began, why it went wrong, and what I learned along the way.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://dogukanteber.github.io/graveyard/biruni">biruni&lt;/a>&lt;/p>
+&lt;p>&lt;strong>tl;dr:&lt;/strong> Built a deterministic API for LLM datetime operations without verifying the problem first, only to find the market had already solved it with Python tool calls.&lt;/p></description></item><item><title>linea</title><link>https://dogukanteber.github.io/graveyard/linea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/graveyard/linea/</guid><description>&lt;p>&lt;strong>Status:&lt;/strong> Failed&lt;/p>
+&lt;h3 id="the-idea">The Idea&lt;/h3>
+&lt;p>Had one too many bad haircut and decided to build a hair style try-on app for males, mostly for myself &amp;ndash; a mobile app wrapper around a vision model.&lt;/p>
+&lt;p>I tried a couple of existing solutions, didn&amp;rsquo;t like the results. Decided to build my own by using better models and changing the angle from B2C to B2B, barbers.&lt;/p>
+&lt;h3 id="what-went-wrong">What Went Wrong&lt;/h3>
+&lt;p>I could have built a dumb prototype, responsive web app, could have gone to barbers to get their opinions but instead I jumped straight into the code and started building the app.&lt;/p></description></item><item><title>Projects</title><link>https://dogukanteber.github.io/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dogukanteber.github.io/projects/</guid><description>&lt;p>Things I built and am still tinkering with.&lt;/p>
+&lt;hr>
+&lt;h3 id="yaz">Yaz&lt;/h3>
+&lt;p>&lt;em>building&lt;/em>&lt;/p>
+&lt;p>An AI-assisted writing tool that amplifies one&amp;rsquo;s writing ability by challenging their thoughts. It helps you come up with better words and phrases to frame your thoughts. The writer is in control of their writing and the app acts as a co-pilot. It never generates text for the writer, only suggestions.&lt;/p>
+&lt;h3 id="cartography-website">Cartography Website&lt;/h3>
+&lt;p>&lt;em>building - Woodwell Climate Research Center&lt;/em>&lt;/p>
+&lt;p>A website for inquirying custom cartography services. It includes internal dashboard for managing requests for the staff.&lt;/p></description></item></channel></rss>
