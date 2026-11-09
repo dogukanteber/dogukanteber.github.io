@@ -1,0 +1,89 @@
+---
+import { render } from 'astro:content';
+import Timeline from '../../components/Timeline.astro';
+import Base from '../../layouts/Base.astro';
+import { formatMonth, getBuilds, isoDate, isPostmortem, type Build } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const builds = await getBuilds();
+  return builds.map((build) => ({ params: { slug: build.id }, props: { build } }));
+}
+
+interface Props {
+  build: Build;
+}
+
+const { build } = Astro.props;
+const { Content } = await render(build);
+const { title, description, status, hideStatus, date, context, site, repo, milestone, timeline } = build.data;
+const postmortem = isPostmortem(build);
+---
+
+<Base
+  title={postmortem ? `${title} (postmortem)` : title}
+  description={description}
+  section={postmortem ? '/graveyard/' : '/builds/'}
+>
+  <article>
+    <header class="build-header">
+      <h1>{title}</h1>
+      <p class="meta">
+        <time datetime={isoDate(date).slice(0, 7)}>{formatMonth(date)}</time>
+        {postmortem ? ` · postmortem · ${status}` : !hideStatus && ` · ${status}`}
+        {
+          milestone && (
+            <>
+              {' · '}
+              <span class="star" aria-hidden="true">★</span> milestone
+            </>
+          )
+        }
+        {context && ` · ${context}`}
+        {
+          site && (
+            <>
+              {' · '}
+              <a href={site}>site ↗</a>
+            </>
+          )
+        }
+        {
+          repo && (
+            <>
+              {' · '}
+              <a href={repo}>repo ↗</a>
+            </>
+          )
+        }
+      </p>
+      <p class="more">
+        {postmortem ? <a href="/graveyard/">← The graveyard</a> : <a href="/builds/">← All builds</a>}
+      </p>
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+    {timeline && timeline.length > 0 && <Timeline entries={timeline} />}
+  </article>
+</Base>
+
+<style>
+  .build-header {
+    margin-bottom: 2rem;
+  }
+
+  .meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .star {
+    color: var(--accent);
+  }
+
+  .more {
+    margin-top: 1rem;
+  }
+</style>

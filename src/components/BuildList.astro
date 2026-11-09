@@ -1,0 +1,69 @@
+---
+import { formatMonth, isoDate, type Build } from '../lib/content';
+
+interface Props {
+  builds: Build[];
+  /** Star milestone builds. Pages that set this should explain the star. */
+  markMilestones?: boolean;
+  /** Hide status labels where the page's sections already convey status. */
+  hideStatus?: boolean;
+}
+
+const { builds, markMilestones = false, hideStatus = false } = Astro.props;
+---
+
+<ul class="items">
+  {
+    builds.map((build) => (
+      <li class="dated" data-milestone={build.data.milestone || undefined}>
+        <time class="date" datetime={isoDate(build.data.date).slice(0, 7)}>
+          {formatMonth(build.data.date)}
+        </time>
+        <div>
+          <a class="item-title" href={`/builds/${build.id}/`}>
+            {build.data.title}
+          </a>{' '}
+          {markMilestones && build.data.milestone && (
+            <span class="star" role="img" aria-label="milestone">
+              ★
+            </span>
+          )}
+          {!hideStatus && <span class={`status status-${build.data.status}`}>{build.data.status}</span>}
+          <span class="item-desc">{build.data.description}</span>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .star {
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+  }
+
+  .status {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-left: 0.35rem;
+    white-space: nowrap;
+  }
+
+  .status::before {
+    content: '';
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-right: 0.35rem;
+    border-radius: 50%;
+    background: var(--rule);
+    vertical-align: 0.05rem;
+  }
+
+  .status-building::before,
+  .status-live::before {
+    background: var(--accent);
+  }
+</style>

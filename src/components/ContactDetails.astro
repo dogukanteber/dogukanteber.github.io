@@ -1,0 +1,41 @@
+---
+import { hasEmail, site } from '../site';
+---
+
+<p>
+  Send me products, opportunities, ideas for collaborating, or any question you want to ask. Email or a LinkedIn DM is
+  the best way to reach me. I read everything, though I can’t always reply quickly.
+</p>
+
+<ul class="items channels">
+  <li>
+    <span class="channel mono">email</span>
+    {hasEmail ? <a href={`mailto:${site.email}`}>{site.email}</a> : <span>{site.email}</span>}
+  </li>
+  <li>
+    <span class="channel mono">linkedin</span>
+    <a href={site.linkedin}>{site.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</a>
+  </li>
+</ul>
+
+<style>
+  .channels {
+    margin-top: 2rem;
+  }
+
+  .channels > li {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 1rem;
+    align-items: baseline;
+  }
+
+  .channels > li + li {
+    margin-top: 0.5rem;
+  }
+
+  .channel {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+</style>

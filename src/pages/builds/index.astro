@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import BuildList from '../../components/BuildList.astro';
+import { buildGroups, getBuilds } from '../../lib/content';
+
+const builds = await getBuilds();
+const groups = buildGroups.map((group) => ({
+  ...group,
+  builds: builds.filter((build) => group.statuses.some((status) => status === build.data.status)),
+}));
+---
+
+<Base title="Builds" description="What I’m building and what I’ve shipped.">
+  <h1>Builds</h1>
+  <div class="filter mono" role="group" aria-label="Filter builds" data-filter hidden>
+    <span class="filter-label">show:</span>
+    <button type="button" data-highlighted="false" aria-pressed="true">all</button>
+    <button type="button" data-highlighted="true" aria-pressed="false">highlighted</button>
+  </div>
+
+  <div data-builds>
+    {
+      groups.map((group) => (
+        <section class="section" id={group.id} aria-labelledby={`${group.id}-title`}>
+          <h2 class="label" id={`${group.id}-title`}>
+            {group.label}
+          </h2>
+          <BuildList builds={group.builds} markMilestones hideStatus />
+        </section>
+      ))
+    }
+  </div>
+</Base>
+
+<script>
+  const filter = document.querySelector<HTMLElement>('[data-filter]');
+  const list = document.querySelector<HTMLElement>('[data-builds]');
+  if (filter && list) {
+    const buttons = filter.querySelectorAll<HTMLButtonElement>('button');
+    const set = (on: boolean) => {
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.highlighted === String(on))));
+      list.toggleAttribute('data-highlighted-only', on);
+    };
+
+    filter.hidden = false;
+    set(new URLSearchParams(location.search).has('highlighted'));
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        const on = b.dataset.highlighted === 'true';
+        set(on);
+        history.replaceState(null, '', on ? '?highlighted' : location.pathname);
+      }),
+    );
+  }
+</script>
+
+<style>
+  .section .label {
+    margin-bottom: 1.25rem;
+  }
+
+  .filter {
+    display: flex;
+    align-items: baseline;
+    gap: 1.1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .filter[hidden] {
+    display: none;
+  }
+
+  .filter button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .filter button:hover,
+  .filter button[aria-pressed='true'] {
+    color: var(--fg);
+  }
+
+  .filter button[aria-pressed='true'] {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.18em;
+  }
+
+  [data-highlighted-only] :global(.items) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  [data-highlighted-only] :global(.items > li) {
+    margin-top: 0;
+  }
+
+  [data-highlighted-only] :global(.items > li:not([data-milestone])),
+  [data-highlighted-only] .section:not(:has(li[data-milestone])) {
+    display: none;
+  }
+</style>

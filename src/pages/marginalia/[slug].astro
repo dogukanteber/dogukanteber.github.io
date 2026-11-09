@@ -1,0 +1,50 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatMonth, getBooks, isoDate, type Book } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const books = await getBooks();
+  return books.map((book) => ({ params: { slug: book.id }, props: { book } }));
+}
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+const { Content } = await render(book);
+const { title, author, description, date } = book.data;
+---
+
+<Base title={`${title} by ${author}`} description={description}>
+  <article>
+    <header class="book-header">
+      <h1>{title}</h1>
+      <p class="meta">
+        by {author} · finished <time datetime={isoDate(date).slice(0, 7)}>{formatMonth(date)}</time>
+      </p>
+      <p class="more"><a href="/marginalia/">← All marginalia</a></p>
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .book-header {
+    margin-bottom: 2rem;
+  }
+
+  .meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .more {
+    margin-top: 1rem;
+  }
+</style>

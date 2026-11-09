@@ -1,0 +1,88 @@
+---
+import { formatDate, formatDay, isoDate, type Build } from '../lib/content';
+
+interface Props {
+  entries: NonNullable<Build['data']['timeline']>;
+}
+
+const { entries } = Astro.props;
+const spansYears = new Set(entries.map((entry) => entry.date.getUTCFullYear())).size > 1;
+---
+
+<section class="timeline">
+  <h2>Timeline</h2>
+  <ol>
+    {
+      entries.map((entry) => (
+        <li>
+          <time class="date" datetime={isoDate(entry.date)}>
+            {spansYears ? formatDate(entry.date) : formatDay(entry.date)}
+          </time>
+          <span class="title">{entry.title}</span>
+          {entry.note && <p class="note">{entry.note}</p>}
+          {entry.lesson && <p class="lesson">{entry.lesson}</p>}
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style>
+  .timeline {
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1.25rem;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0 0 0 0.3rem;
+    padding: 0;
+    border-left: 1px solid var(--rule);
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.4rem;
+  }
+
+  li + li {
+    margin-top: 1.5rem;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: calc(-0.3rem - 0.5px);
+    top: 0.45rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent);
+    background: var(--bg);
+  }
+
+  .date {
+    display: block;
+  }
+
+  .title {
+    display: block;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .note,
+  .lesson {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin: 0.35rem 0 0;
+  }
+
+  .note {
+    color: var(--muted);
+  }
+</style>

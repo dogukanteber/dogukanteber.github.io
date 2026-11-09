@@ -1,0 +1,100 @@
+---
+import { render } from 'astro:content';
+import katexCss from 'katex/dist/katex.min.css?inline';
+import Base from '../../layouts/Base.astro';
+import { formatDate, getNotes, isoDate, type Note } from '../../lib/content';
+export async function getStaticPaths() {
+  const notes = await getNotes();
+  return notes.map((note, i) => ({
+    params: { slug: note.id },
+    props: { note, newer: notes[i - 1], older: notes[i + 1] },
+  }));
+}
+
+interface Props {
+  note: Note;
+  newer?: Note;
+  older?: Note;
+}
+
+const { note, newer, older } = Astro.props;
+const { Content } = await render(note);
+const { title, description, date, updated, tags, math } = note.data;
+---
+
+<Base
+  title={title}
+  description={description}
+  ogImage={`/og/notes/${note.id}.png`}
+  article={{ published: date, updated, tags }}
+>
+  {math && <style slot="head" is:inline set:html={katexCss} />}
+  <article>
+    <header class="post-header">
+      <h1>{title}</h1>
+      <p class="meta">
+        <time datetime={isoDate(date)}>{formatDate(date)}</time>
+      </p>
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+
+  <nav class="pager" aria-label="More notes">
+    {
+      older ? (
+        <a href={`/notes/${older.id}/`} rel="prev">
+          <span class="label">← older</span>
+          {older.data.title}
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      newer && (
+        <a class="newer" href={`/notes/${newer.id}/`} rel="next">
+          <span class="label">newer →</span>
+          {newer.data.title}
+        </a>
+      )
+    }
+  </nav>
+</Base>
+
+<style>
+  .post-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .pager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .pager a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .pager .label {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .newer {
+    text-align: right;
+  }
+</style>

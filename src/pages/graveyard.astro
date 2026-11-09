@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import BuildList from '../components/BuildList.astro';
+import { getBuilds, isPostmortem } from '../lib/content';
+
+const postmortems = (await getBuilds()).filter(isPostmortem);
+const description = 'Ideas that didn’t make it, each with a postmortem on why and what I learned.';
+---
+
+<Base title="Graveyard" description={description}>
+  <h1>Graveyard</h1>
+  <p class="lede">{description}</p>
+
+  <section class="section" aria-labelledby="postmortems">
+    <h2 class="label" id="postmortems">postmortems</h2>
+    <BuildList builds={postmortems} />
+  </section>
+</Base>

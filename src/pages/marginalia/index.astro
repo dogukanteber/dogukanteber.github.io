@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import { formatMonth, getBooks, isoDate } from '../../lib/content';
+
+const books = await getBooks();
+const description = 'Quotes, TL;DRs, and the parts that stuck with me from the books I read.';
+---
+
+<Base title="Marginalia" description={description}>
+  <h1>Marginalia</h1>
+  <p class="lede">{description}</p>
+
+  <section class="section" aria-labelledby="books">
+    <h2 class="label" id="books">books</h2>
+    {
+      books.length > 0 ? (
+        <ul class="items">
+          {books.map((book) => (
+            <li class="dated">
+              <time class="date" datetime={isoDate(book.data.date).slice(0, 7)}>
+                {formatMonth(book.data.date)}
+              </time>
+              <div>
+                <a class="item-title" href={`/marginalia/${book.id}/`}>
+                  {book.data.title}
+                </a>{' '}
+                <span class="author">by {book.data.author}</span>
+                <span class="item-desc">{book.data.description}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="section-desc">Nothing here yet.</p>
+      )
+    }
+  </section>
+</Base>
+
+<style>
+  .author {
+    color: var(--muted);
+    font-size: 1rem;
+  }
+</style>

@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import NoteList from '../../components/NoteList.astro';
+import { getNotes, type Note } from '../../lib/content';
+
+const notes = await getNotes();
+const years = new Map<number, Note[]>();
+for (const note of notes) {
+  const year = note.data.date.getUTCFullYear();
+  years.set(year, [...(years.get(year) ?? []), note]);
+}
+---
+
+<Base title="Notes" description="Essays and technical notes on engineering, AI, HPC, and life.">
+  <h1>Notes</h1>
+  <p class="lede">Essays, technical notes, my brain dump.</p>
+
+  {
+    [...years].map(([year, notes]) => (
+      <section class="section" aria-labelledby={`year-${year}`}>
+        <h2 class="label" id={`year-${year}`}>
+          {year}
+        </h2>
+        <NoteList notes={notes} hideYear />
+      </section>
+    ))
+  }
+</Base>
+
+<style>
+  .section .label {
+    margin-bottom: 1.25rem;
+  }
+</style>

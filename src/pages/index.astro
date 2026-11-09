@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactDetails from '../components/ContactDetails.astro';
+import { site } from '../site';
+---
+
+<Base>
+  <section class="intro">
+    <h1>Hi, I’m {site.firstName}.</h1>
+    <p class="label">about me</p>
+    {site.bio.map((paragraph) => <p set:html={paragraph} />)}
+  </section>
+
+  <section class="section" aria-labelledby="contact">
+    <h2 class="label" id="contact">get in touch</h2>
+    <ContactDetails />
+  </section>
+</Base>
+
+<style>
+  .intro h1 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+</style>

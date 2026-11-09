@@ -1,0 +1,29 @@
+---
+import { formatDate, formatDay, isoDate, type Note } from '../lib/content';
+
+interface Props {
+  notes: Note[];
+  /** For lists already grouped under a year heading. */
+  hideYear?: boolean;
+}
+
+const { notes, hideYear = false } = Astro.props;
+---
+
+<ul class="items">
+  {
+    notes.map((note) => (
+      <li class="dated">
+        <time class="date" datetime={isoDate(note.data.date)}>
+          {hideYear ? formatDay(note.data.date) : formatDate(note.data.date)}
+        </time>
+        <div>
+          <a class="item-title" href={`/notes/${note.id}/`}>
+            {note.data.title}
+          </a>
+          <span class="item-desc">{note.data.description}</span>
+        </div>
+      </li>
+    ))
+  }
+</ul>
