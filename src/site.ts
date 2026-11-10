@@ -8,7 +8,7 @@ export const site = {
     'Software engineer. I build things and write about engineering, AI, HPC, entrepreneurship, and life.',
   // Rendered as HTML.
   bio: [
-    'I’m a software engineer at <a href="https://www.woodwellclimate.org/">Woodwell Climate Research Center</a>, where I build full-stack applications, internal tools, and compute infrastructure that enable scientists to do their research.',
+    'I’m a software product manager at <a href="https://www.woodwellclimate.org/">Woodwell Climate Research Center</a>, where I build full-stack applications, internal tools, and compute infrastructure that enable scientists to do their research.',
     'On the side, I solve my own problems and build open-source projects to pursue my entrepreneurial ambitions.',
     'I write about technical problems, walk through some of my projects, and share the mistakes I’ve made and the lessons I’ve learned from my experiments.',
   ],
