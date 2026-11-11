@@ -21,6 +21,7 @@ const { title, description = site.description, ogImage = '/og/default.png', arti
 const fullTitle = title ? `${title} · ${site.name}` : site.name;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImageUrl = new URL(ogImage, Astro.site);
+const gaId = import.meta.env.PROD ? site.gaMeasurementId : '';
 ---
 
 <!doctype html>
@@ -58,6 +59,19 @@ const ogImageUrl = new URL(ogImage, Astro.site);
         if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
       } catch {}
     </script>
+    {gaId && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>}
+    {
+      gaId && (
+        <script is:inline define:vars={{ gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      )
+    }
     <slot name="head" />
   </head>
   <body>

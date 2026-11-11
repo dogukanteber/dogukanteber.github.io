@@ -15,6 +15,8 @@ export const site = {
   email: 'dteber@woodwellclimate.org',
   github: 'https://github.com/dogukanteber',
   linkedin: 'https://www.linkedin.com/in/dogukanteber',
+  // GA4 Measurement ID. Analytics stays off while this is empty.
+  gaMeasurementId: 'G-M1LEVVSVL7' as string,
 } as const;
 
 export const hasEmail = site.email.includes('@');
